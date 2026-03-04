@@ -1,5 +1,12 @@
 import logo from "@/assets/ricekids-logo.png";
 import { Heart } from "lucide-react";
+import { Link } from "react-router-dom";
+
+const footerLinks = [
+  { label: "Home", to: "/" },
+  { label: "About Us", to: "/about-us" },
+  { label: "Projects", to: "/projects" },
+];
 
 const Footer = () => {
   return (
@@ -15,15 +22,23 @@ const Footer = () => {
           <div>
             <h4 className="font-display text-lg font-bold text-background mb-4">Quick Links</h4>
             <div className="flex flex-col gap-2">
-              {["Home", "About Us", "Projects", "News & Media", "Donate"].map((link) => (
-                <a
-                  key={link}
-                  href={`#${link.toLowerCase().replace(/ & /g, "-").replace(/ /g, "-")}`}
+              {footerLinks.map((link) => (
+                <Link
+                  key={link.label}
+                  to={link.to}
                   className="font-body text-sm text-background/60 hover:text-primary transition-colors"
                 >
-                  {link}
-                </a>
+                  {link.label}
+                </Link>
               ))}
+              <a
+                href="https://www.ricekids.org/#!"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-body text-sm text-background/60 hover:text-primary transition-colors"
+              >
+                Donate
+              </a>
             </div>
           </div>
           <div>
