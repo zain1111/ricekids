@@ -34,7 +34,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="font-body text-lg md:text-xl text-primary-foreground/90 max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          via education for communities marginalized due to racial, economic, and social inequity
+          via education for marginalized communities
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 20 }}

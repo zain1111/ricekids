@@ -3,9 +3,9 @@ import { useRef } from "react";
 import { Heart, DollarSign, Users } from "lucide-react";
 
 const stats = [
-  { icon: Heart, value: "5,190+", label: "Donations to feed the hungry" },
-  { icon: DollarSign, value: "$125K+", label: "Raised for communities" },
-  { icon: Users, value: "300+", label: "Partners worldwide" },
+  { icon: Heart, value: "10k+", label: "Donations to feed hungry" },
+  { icon: DollarSign, value: "$150k+", label: "Annually" },
+  { icon: Users, value: "300+", label: "Partners" },
 ];
 
 const StatsSection = () => {
