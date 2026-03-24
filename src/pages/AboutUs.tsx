@@ -56,13 +56,16 @@ const AboutUs = () => {
               <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-6">How We Started</h2>
               <div className="space-y-4 font-body text-muted-foreground leading-relaxed">
                 <p>
-                  Rice Kids is an initiative run by the Pranakh Foundation, founded by Anakh Sawhney when she was just 9 years old. The organization was born from a powerful realization: children facing poverty don't just need meals — they need pathways to education and opportunity.
+                  Rice Kids is an initiative run by the Pranakh Foundation, founded by Anakh Sawhney when she was just 9 years old. The organization was born from a powerful realization: children facing poverty don't just need meals, they need pathways to education and opportunity.
                 </p>
                 <p>
-                  Inspired by Sikhism's core principles of equality and selfless service, "Vand Chakhna" (to share what one has with others), Anakh began by mobilizing her family, friends, and neighbors to participate in local community service.
+                  Inspired by Sikhism's core principles of equality and selfless service, "Vand Chakhna" (to share what one has with others), Anakh began by mobilizing her family, friends, and neighbors to participate in local community service. But she quickly recognized a critical gap: most efforts provided temporary relief without addressing why children were dropping out of school or why families couldn't break cycles of poverty. In addition, almost all of these children were from minority and marginalized communities subjected to systemic discrimination.
                 </p>
                 <p>
-                  She quickly recognized a critical gap: most efforts provided temporary relief without addressing why children were dropping out of school or why families couldn't break cycles of poverty. This insight transformed Rice Kids from a simple food initiative into an integrated nutrition-education model.
+                  This insight transformed Rice Kids from a simple food initiative into an integrated model designed for these communities that combines nutrition, education, and health and family support. By partnering with shelters, schools, community centers, and educational nonprofits, Rice Kids has evolved into a comprehensive approach that removes educational barriers and builds pathways to economic independence.
+                </p>
+                <p>
+                  What started as local community drives has grown into a movement spanning five U.S. states and multiple regions in India, proving that sustainable change requires addressing interconnected challenges, not just feeding people today, but building their capacity for tomorrow.
                 </p>
               </div>
             </motion.div>
