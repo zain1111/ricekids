@@ -167,21 +167,82 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* Contact CTA */}
-      <section className="py-20 bg-gradient-warm">
-        <div className="max-w-3xl mx-auto px-6 text-center">
-          <h2 className="font-display text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
-            Get In Touch
-          </h2>
-          <p className="font-body text-primary-foreground/80 text-lg mb-8">
-            Want to learn more, volunteer, or partner with us? We'd love to hear from you.
-          </p>
-          <a
-            href="mailto:contact@ricekids.org"
-            className="inline-block bg-primary-foreground text-primary px-10 py-4 rounded-full font-body font-bold text-lg hover:opacity-90 transition-opacity shadow-elevated"
-          >
+      {/* Contact Us Form */}
+      <section className="py-24 bg-muted/50">
+        <div className="max-w-4xl mx-auto px-6">
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground text-center mb-12">
             Contact Us
-          </a>
+          </h2>
+          <div className="grid md:grid-cols-2 gap-12">
+            <div>
+              <p className="font-body text-muted-foreground leading-relaxed mb-6">
+                Want to learn more, volunteer, or partner with us? We'd love to hear from you. Fill out the form and we'll get back to you as soon as possible.
+              </p>
+              <div className="space-y-4 font-body text-sm text-muted-foreground">
+                <p><strong className="text-foreground">Email:</strong> contact@ricekids.org</p>
+              </div>
+            </div>
+            <form
+              onSubmit={(e) => {
+                e.preventDefault();
+                window.location.href = `mailto:contact@ricekids.org?subject=Contact from Website&body=${encodeURIComponent(
+                  `Name: ${(e.target as any).name.value}\nEmail: ${(e.target as any).email.value}\nPhone: ${(e.target as any).phone.value}\nMessage: ${(e.target as any).message.value}`
+                )}`;
+              }}
+              className="space-y-5"
+            >
+              <div>
+                <label className="font-body text-sm font-semibold text-foreground mb-1.5 block">
+                  Name <span className="text-destructive">*</span>
+                </label>
+                <input
+                  type="text"
+                  name="name"
+                  required
+                  className="w-full px-4 py-3 rounded-xl border border-border bg-background font-body text-foreground focus:outline-none focus:ring-2 focus:ring-primary/30 transition"
+                />
+              </div>
+              <div>
+                <label className="font-body text-sm font-semibold text-foreground mb-1.5 block">
+                  Email <span className="text-destructive">*</span>
+                </label>
+                <input
+                  type="email"
+                  name="email"
+                  required
+                  className="w-full px-4 py-3 rounded-xl border border-border bg-background font-body text-foreground focus:outline-none focus:ring-2 focus:ring-primary/30 transition"
+                />
+              </div>
+              <div>
+                <label className="font-body text-sm font-semibold text-foreground mb-1.5 block">
+                  Phone <span className="text-destructive">*</span>
+                </label>
+                <input
+                  type="tel"
+                  name="phone"
+                  required
+                  className="w-full px-4 py-3 rounded-xl border border-border bg-background font-body text-foreground focus:outline-none focus:ring-2 focus:ring-primary/30 transition"
+                />
+              </div>
+              <div>
+                <label className="font-body text-sm font-semibold text-foreground mb-1.5 block">
+                  Message <span className="text-destructive">*</span>
+                </label>
+                <textarea
+                  name="message"
+                  required
+                  rows={5}
+                  className="w-full px-4 py-3 rounded-xl border border-border bg-background font-body text-foreground focus:outline-none focus:ring-2 focus:ring-primary/30 transition resize-none"
+                />
+              </div>
+              <button
+                type="submit"
+                className="w-full bg-primary text-primary-foreground px-8 py-3.5 rounded-full font-body font-bold text-base hover:opacity-90 transition-opacity shadow-elevated"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
         </div>
       </section>
 
