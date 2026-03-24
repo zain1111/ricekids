@@ -13,64 +13,10 @@ const allNews = [
     image: "https://www.ricekids.org/wp-content/uploads/2026/01/Rice-Kids-Volunteers.jpg",
   },
   {
-    title: "Meet Anakh Sawhney | CEO, Rice Kids",
-    excerpt: "We had the good fortune of connecting with Anakh Sawhney and we've shared our conversation below.",
-    link: "https://shoutoutmiami.com/meet-anakh-sawhney-ceo-rice-kids/",
-    image: "https://www.ricekids.org/wp-content/uploads/2026/01/Rice-Kids-Classroom.jpg",
-  },
-  {
-    title: "Rice Kids Grows Its India Presence with focus on kids learning",
-    excerpt: "In a world where millions still sleep hungry, Rice Kids is proving that compassion can cross continents and scale impact.",
-    link: "https://theprint.in/ani-press-releases/rice-kids-grows-its-india-presence-with-a-simple-focus-meals-that-keep-kids-learning/2715273/",
-    image: "https://www.ricekids.org/wp-content/uploads/2025/09/IMG_9999-scaled.jpg",
-  },
-  {
-    title: "Bernardsville Teen CEO Leads Global Fight Against Hunger",
-    excerpt: "BERNARDSVILLE, NJ - Anakh Sawhney, a 16 year-old Bernardsville resident, is not your typical teenager.",
-    link: "https://www.tapinto.net/towns/bernardsville-and-bedminster/sections/giving-back/articles/bernardsville-teen-ceo-leads-global-fight-against-hunger",
-    image: "https://www.ricekids.org/wp-content/uploads/2025/08/best_crop_dcc286151f7da8d76da7_IMG_5400.jpeg",
-  },
-  {
-    title: "Bernardsville Siblings Embark on a Mission to Deliver Hot, Nutritious Food to the Hungry",
-    excerpt: "When Anakh Sawhney and Prabir Sawhney were young, they remember feeling moved by the plight of those less fortunate.",
-    link: "https://citylifestyle.com/articles/rice-kids",
-    image: "https://www.ricekids.org/wp-content/uploads/2025/09/IMG_0034-scaled.jpg",
-  },
-  {
-    title: "Somerset Hills Feature",
-    excerpt: "Rice Kids, founded by Anakh Sawhney, is proving that compassion knows no boundaries.",
-    link: "https://issuu.com/lifestylepubs/docs/somerset_hills_2023_8_print/40",
-    image: "https://www.ricekids.org/wp-content/uploads/2023/11/PXL_20230304_151453597-1.jpg",
-  },
-  {
     title: "Anakh Sawhney becomes youngest NJBiz 40 Under 40 honoree",
     excerpt: "Sixteen-year-old Indian-American student and nonprofit leader Anakh Sawhney made history as the youngest honoree.",
     link: "https://www.newindiaabroad.com/english/people/anakh-sawhney-becomes-youngest-njbiz-40-under-40-honoree",
     image: "https://www.ricekids.org/wp-content/uploads/2025/11/Anakh-Sawhney-NJBiz-Forty-Under-40-Award1-scaled.jpg",
-  },
-  {
-    title: "Rice Kids Expands Education and Nutrition Support in India",
-    excerpt: "Rice Kids, a youth-led nonprofit founded by 16-year-old changemaker Anakh Sawhney, expands its reach across India.",
-    link: "https://thecsruniverse.com/articles/rice-kids-expands-education-and-nutrition-support-in-india",
-    image: "https://www.ricekids.org/wp-content/uploads/2025/09/IMG_9989-1-scaled.jpg",
-  },
-  {
-    title: "Meet The Bernardsville Teen Tackling Poverty Since Age 9",
-    excerpt: "In a world where millions still sleep hungry, Rice Kids is proving that compassion can cross continents and scale impact.",
-    link: "https://www.ricekids.org/wp-content/uploads/2025/10/Meet-The-Bernardsville-Teen-Tackling-Poverty-Since-Age-9.pdf",
-    image: "https://www.ricekids.org/wp-content/uploads/2026/01/Rice-Kids-Why-Education-1-scaled.jpg",
-  },
-  {
-    title: "Rice Kids Expands in India with Nutritious Meals for Learning",
-    excerpt: "The organization built its programs beyond meal distribution in India, integrating food support with education and vocational training.",
-    link: "https://majestylifecoach.com/education/rice-kids-expands-in-india-with-nutritious-meals-for-learning/",
-    image: "https://www.ricekids.org/wp-content/uploads/2025/09/IMG_9950-scaled.jpg",
-  },
-  {
-    title: "Rice Kids Grows Its India Presence — Meals That Keep Kids Learning",
-    excerpt: "16-year-old changemaker Anakh Sawhney's non-profit tackles hunger to help keep kids in school.",
-    link: "https://www.business-standard.com/content/press-releases-ani/rice-kids-grows-its-india-presence-with-a-simple-focus-meals-that-keep-kids-learning-125080601269_1.html",
-    image: "https://www.ricekids.org/wp-content/uploads/2025/09/IMG_0083h.jpg",
   },
   {
     title: "Breaking Age Barriers in Leadership, with 16-year old Anakh Sawhney",
@@ -79,16 +25,52 @@ const allNews = [
     image: "https://www.ricekids.org/wp-content/uploads/2025/09/maxresdefault.jpg",
   },
   {
+    title: "Meet Anakh Sawhney | CEO, Rice Kids",
+    excerpt: "We had the good fortune of connecting with Anakh Sawhney and we've shared our conversation below.",
+    link: "https://shoutoutmiami.com/meet-anakh-sawhney-ceo-rice-kids/",
+    image: "https://www.ricekids.org/wp-content/uploads/2026/01/Rice-Kids-Classroom.jpg",
+  },
+  {
+    title: "Rice Kids Expands Education and Nutrition Support in India",
+    excerpt: "Rice Kids, a youth-led nonprofit founded by 16-year-old changemaker Anakh Sawhney, expands its reach across India.",
+    link: "https://thecsruniverse.com/articles/rice-kids-expands-education-and-nutrition-support-in-india",
+    image: "https://www.ricekids.org/wp-content/uploads/2025/09/IMG_9989-1-scaled.jpg",
+  },
+  {
     title: "Rice Kids, Sunaayy Foundation partner to boost education in India",
     excerpt: "The partnership will combine resources to support underprivileged children with learning, nutrition, and wellness programs across India.",
     link: "https://www.newindiaabroad.com/english/news/rice-kids-sunaayy-foundation-partner-to-boost-education-in-india",
     image: "https://www.ricekids.org/wp-content/uploads/2025/09/IMG_0039-scaled.jpg",
   },
   {
-    title: "Rice Kids Grows Its India Presence — Tribune India",
+    title: "Rice Kids Grows Its India Presence with focus on kids learning",
     excerpt: "In a world where millions still sleep hungry, Rice Kids is proving that compassion can cross continents and scale impact.",
-    link: "https://www.tribuneindia.com/news/business/rice-kids-grows-its-india-presence-with-a-simple-focus-meals-that-keep-kids-learning/",
-    image: "https://www.ricekids.org/wp-content/uploads/2025/09/IMG_0131-scaled.jpg",
+    link: "https://theprint.in/ani-press-releases/rice-kids-grows-its-india-presence-with-a-simple-focus-meals-that-keep-kids-learning/2715273/",
+    image: "https://www.ricekids.org/wp-content/uploads/2025/09/IMG_9999-scaled.jpg",
+  },
+  {
+    title: "Meet The Bernardsville Teen Tackling Poverty Since Age 9",
+    excerpt: "In a world where millions still sleep hungry, Rice Kids is proving that compassion can cross continents and scale impact.",
+    link: "https://www.ricekids.org/wp-content/uploads/2025/10/Meet-The-Bernardsville-Teen-Tackling-Poverty-Since-Age-9.pdf",
+    image: "https://www.ricekids.org/wp-content/uploads/2026/01/Rice-Kids-Why-Education-1-scaled.jpg",
+  },
+  {
+    title: "Rice Kids Grows Its India Presence with a Simple Focus - Meals That Keep Kids Learning",
+    excerpt: "16-year-old changemaker Anakh Sawhney's non-profit tackles hunger to help keep kids in school.",
+    link: "https://www.business-standard.com/content/press-releases-ani/rice-kids-grows-its-india-presence-with-a-simple-focus-meals-that-keep-kids-learning-125080601269_1.html",
+    image: "https://www.ricekids.org/wp-content/uploads/2025/09/IMG_0083h.jpg",
+  },
+  {
+    title: "Bernardsville Teen CEO Leads Global Fight Against Hunger",
+    excerpt: "BERNARDSVILLE, NJ - Anakh Sawhney, a 16 year-old Bernardsville resident, is not your typical teenager.",
+    link: "https://www.tapinto.net/towns/bernardsville-and-bedminster/sections/giving-back/articles/bernardsville-teen-ceo-leads-global-fight-against-hunger",
+    image: "https://www.ricekids.org/wp-content/uploads/2025/08/best_crop_dcc286151f7da8d76da7_IMG_5400.jpeg",
+  },
+  {
+    title: "Rice Kids Expands in India with Nutritious Meals for Learning",
+    excerpt: "The organization built its programs beyond meal distribution in India, integrating food support with education and vocational training.",
+    link: "https://majestylifecoach.com/education/rice-kids-expands-in-india-with-nutritious-meals-for-learning/",
+    image: "https://www.ricekids.org/wp-content/uploads/2025/09/IMG_9950-scaled.jpg",
   },
   {
     title: "Feeding Futures: Rice Kids' Global Compassion Revolution",
@@ -97,10 +79,34 @@ const allNews = [
     image: "https://www.ricekids.org/wp-content/uploads/2025/09/IMG_9989-1-scaled.jpg",
   },
   {
+    title: "Bernardsville Siblings Embark on a Mission to Deliver Hot, Nutritious Food to the Hungry",
+    excerpt: "When Anakh Sawhney and Prabir Sawhney were young, they remember feeling moved by the plight of those less fortunate.",
+    link: "https://citylifestyle.com/articles/rice-kids",
+    image: "https://www.ricekids.org/wp-content/uploads/2025/09/IMG_0034-scaled.jpg",
+  },
+  {
+    title: "Rice Kids Grows Its India Presence — Meals That Keep Kids Learning",
+    excerpt: "In a world where millions still sleep hungry, Rice Kids is proving that compassion can cross continents and scale impact.",
+    link: "https://www.tribuneindia.com/news/business/rice-kids-grows-its-india-presence-with-a-simple-focus-meals-that-keep-kids-learning/",
+    image: "https://www.ricekids.org/wp-content/uploads/2025/09/IMG_0131-scaled.jpg",
+  },
+  {
     title: "No One Sleeps Hungry — Meet the Bernardsville Teen Feeding the World",
     excerpt: "Walking the streets of New York City when she was only nine, Anakh was moved to make a difference.",
     link: "https://web.facebook.com/bernardsvillenews/posts/bernardsville-walking-the-streets-of-new-york-city-when-she-was-only-nine-anakh-/1340170961446564/",
     image: "https://www.ricekids.org/wp-content/uploads/2025/08/9504772634440036619.jpg",
+  },
+  {
+    title: "Somerset Hills Feature",
+    excerpt: "Rice Kids, founded by Anakh Sawhney, is proving that compassion knows no boundaries.",
+    link: "https://issuu.com/lifestylepubs/docs/somerset_hills_2023_8_print/40",
+    image: "https://www.ricekids.org/wp-content/uploads/2023/11/PXL_20230304_151453597-1.jpg",
+  },
+  {
+    title: "Rice Kids Expands Education and Nutrition Support in India",
+    excerpt: "Rice Kids, a youth-led nonprofit, expands its reach with education and nutrition programs across India.",
+    link: "https://thecsruniverse.com/articles/rice-kids-expands-education-and-nutrition-support-in-india",
+    image: "https://www.ricekids.org/wp-content/uploads/2025/09/IMG_9989-1-scaled.jpg",
   },
   {
     title: "Rice Kids Spreads Hope and Healthy Meals",
@@ -109,7 +115,6 @@ const allNews = [
     image: "https://www.ricekids.org/wp-content/uploads/2023/11/PXL_20230122_192949801.jpg",
   },
 ];
-
 const ITEMS_PER_PAGE = 9;
 
 const NewsMedia = () => {
