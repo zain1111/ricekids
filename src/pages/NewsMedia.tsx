@@ -149,34 +149,36 @@ const NewsMedia = () => {
             </h2>
           </motion.div>
 
-          <div className="flex flex-col divide-y divide-border">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {visibleNews.map((item, i) => (
               <motion.a
                 key={i}
                 href={item.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                initial={{ opacity: 0, x: -20 }}
-                animate={inView ? { opacity: 1, x: 0 } : {}}
+                initial={{ opacity: 0, y: 30 }}
+                animate={inView ? { opacity: 1, y: 0 } : {}}
                 transition={{ delay: 0.05 + (i % ITEMS_PER_PAGE) * 0.04 }}
-                className="group flex items-center gap-6 py-5 px-4 -mx-4 rounded-xl hover:bg-muted/60 transition-all duration-300"
+                className="group bg-card rounded-2xl overflow-hidden shadow-card hover:shadow-elevated transition-all duration-500 flex flex-col"
               >
-                <div className="w-20 h-20 md:w-24 md:h-24 rounded-xl overflow-hidden flex-shrink-0">
+                <div className="h-48 overflow-hidden">
                   <img
                     src={item.image}
                     alt={item.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
                 </div>
-                <div className="flex-1 min-w-0">
-                  <h3 className="font-display text-base md:text-lg font-bold text-foreground group-hover:text-primary transition-colors line-clamp-1">
+                <div className="p-6 flex flex-col flex-1">
+                  <h3 className="font-display text-lg font-bold text-foreground mb-2 group-hover:text-primary transition-colors line-clamp-2">
                     {item.title}
                   </h3>
-                  <p className="font-body text-muted-foreground text-sm leading-relaxed mt-1 line-clamp-1 hidden sm:block">
+                  <p className="font-body text-muted-foreground text-sm leading-relaxed mb-4 line-clamp-2 flex-1">
                     {item.excerpt}
                   </p>
+                  <span className="font-body text-primary text-sm font-semibold flex items-center gap-1">
+                    Read More <ExternalLink size={14} />
+                  </span>
                 </div>
-                <ExternalLink size={18} className="text-muted-foreground group-hover:text-primary transition-colors flex-shrink-0" />
               </motion.a>
             ))}
           </div>
