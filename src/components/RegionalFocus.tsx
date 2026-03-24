@@ -50,7 +50,7 @@ const RegionalFocus = () => {
         >
           <p className="font-display text-6xl font-bold text-gradient-warm mb-2">100%</p>
           <p className="font-body text-muted-foreground text-sm max-w-md mx-auto">
-            Our operational costs are covered by private donors, so 100% of donations go directly to help those in need.
+            Our operational costs are covered by private donors, so 100% of donations go directly to help feed the hungry.
           </p>
         </motion.div>
       </div>

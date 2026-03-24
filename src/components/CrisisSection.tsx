@@ -46,7 +46,7 @@ const CrisisSection = () => {
           transition={{ delay: 0.4 }}
           className="font-body text-muted-foreground mt-8 max-w-3xl mx-auto leading-relaxed"
         >
-          The intersection of educational barriers and malnutrition traps entire generations in poverty. Almost all these kids are from minority communities, systemically discriminated against because of their race, caste, gender, or economic status.
+          With 285 million children denied education globally and 828 million people facing hunger daily, the intersection of educational barriers and malnutrition traps entire generations in poverty, preventing 617 million young people from acquiring even basic literacy and math skills. Not surprisingly, almost all these kids are from minority communities, systemically discriminated against because of their race, caste, gender, or economic status.
         </motion.p>
       </div>
     </section>

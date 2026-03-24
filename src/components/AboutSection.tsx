@@ -40,10 +40,10 @@ const AboutSection = () => {
         >
           <p className="font-body text-sm uppercase tracking-[0.25em] text-primary font-semibold mb-3">About Rice Kids</p>
           <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground mb-6">
-            Breaking the Cycle of Poverty
+            Over half a million lives touched
           </h2>
           <p className="font-body text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Rice Kids' innovative model helps underprivileged kids break the cycle of poverty. The unique approach relies on providing holistic support that removes all barriers so kids can remain in school and empowers the women in communities to drive scalable change.
+            with an innovative model helping break the cycle of poverty. The unique approach relies on providing holistic support that removes all barriers so kids can remain in school and empowers the women in communities to drive scalable change. Established in 2018 to provide hot and nutritious meals, Anakh realized that simply feeding is not the solution and pivoted to focus on education for sustainable change. Working directly with children and youth, as well as through partnerships, we are helping kids remain in or return to mainstream education.
           </p>
         </motion.div>
 
