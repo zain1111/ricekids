@@ -178,22 +178,100 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* Contact CTA */}
-      <section className="py-20 bg-gradient-warm">
-        <div className="max-w-3xl mx-auto px-6 text-center">
-          <h2 className="font-display text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
-            Get In Touch
-          </h2>
-          <p className="font-body text-primary-foreground/80 text-lg mb-8">
-            Want to learn more, volunteer, or partner with us? We'd love to hear from you.
-          </p>
-          <a
-            href="mailto:contact@ricekids.org"
-            className="inline-block bg-primary-foreground text-primary px-10 py-4 rounded-full font-body font-bold text-lg hover:opacity-90 transition-opacity shadow-elevated"
-          >
-            Contact Us
-          </a>
+      {/* Contact Section */}
+      <section className="py-24 bg-muted/50">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <p className="font-body text-sm uppercase tracking-[0.25em] text-primary font-semibold mb-3">Get In Touch</p>
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
+              We'd Love to Hear From You
+            </h2>
+            <p className="font-body text-muted-foreground text-lg max-w-2xl mx-auto">
+              Want to learn more, volunteer, or partner with us? Reach out and we'll get back to you.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-10">
+            {/* Contact Form */}
+            <div className="bg-card rounded-2xl p-8 shadow-card">
+              <form
+                onSubmit={(e) => {
+                  e.preventDefault();
+                  const form = e.target as HTMLFormElement;
+                  const formData = new FormData(form);
+                  const name = formData.get("name");
+                  const email = formData.get("email");
+                  const message = formData.get("message");
+                  window.location.href = `mailto:contact@ricekids.org?subject=Message from ${name}&body=${message}%0A%0AFrom: ${name} (${email})`;
+                }}
+                className="space-y-5"
+              >
+                <div>
+                  <label className="block font-body text-sm font-semibold text-foreground mb-1.5">Name</label>
+                  <input
+                    type="text"
+                    name="name"
+                    required
+                    placeholder="Your full name"
+                    className="w-full px-4 py-3 rounded-xl border border-border bg-background text-foreground font-body text-sm focus:outline-none focus:ring-2 focus:ring-primary/40 transition"
+                  />
+                </div>
+                <div>
+                  <label className="block font-body text-sm font-semibold text-foreground mb-1.5">Email</label>
+                  <input
+                    type="email"
+                    name="email"
+                    required
+                    placeholder="you@example.com"
+                    className="w-full px-4 py-3 rounded-xl border border-border bg-background text-foreground font-body text-sm focus:outline-none focus:ring-2 focus:ring-primary/40 transition"
+                  />
+                </div>
+                <div>
+                  <label className="block font-body text-sm font-semibold text-foreground mb-1.5">Message</label>
+                  <textarea
+                    name="message"
+                    required
+                    rows={4}
+                    placeholder="How can we help?"
+                    className="w-full px-4 py-3 rounded-xl border border-border bg-background text-foreground font-body text-sm focus:outline-none focus:ring-2 focus:ring-primary/40 transition resize-none"
+                  />
+                </div>
+                <button
+                  type="submit"
+                  className="w-full flex items-center justify-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-xl font-body font-bold text-sm hover:opacity-90 transition-opacity"
+                >
+                  <Send className="w-4 h-4" /> Send Message
+                </button>
+              </form>
+
+              <div className="mt-8 pt-6 border-t border-border space-y-3">
+                <div className="flex items-center gap-3 font-body text-sm text-muted-foreground">
+                  <Mail className="w-4 h-4 text-primary" />
+                  <a href="mailto:contact@ricekids.org" className="hover:text-foreground transition-colors">contact@ricekids.org</a>
+                </div>
+                <div className="flex items-center gap-3 font-body text-sm text-muted-foreground">
+                  <MapPin className="w-4 h-4 text-primary" />
+                  <span>Bernardsville, New Jersey, USA</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Map */}
+            <div className="rounded-2xl overflow-hidden shadow-card min-h-[400px]">
+              <iframe
+                title="Rice Kids Location"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24196.99663745!2d-74.59!3d40.72!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3a3e3a7b3f3b7%3A0x1c2e3f4a5b6c7d8e!2sBernardsville%2C%20NJ!5e0!3m2!1sen!2sus!4v1700000000000"
+                width="100%"
+                height="100%"
+                style={{ border: 0, minHeight: "400px" }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
+          </div>
         </div>
+      </section>
       </section>
 
       <Footer />
