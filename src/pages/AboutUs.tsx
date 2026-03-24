@@ -118,52 +118,62 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* Creating Pathways */}
+      {/* What Drives Us - Two Column */}
       <section className="py-24 bg-background" ref={valuesRef}>
-        <div className="max-w-5xl mx-auto px-6">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
+        <div className="max-w-7xl mx-auto px-6">
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
             animate={valuesInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6 }}
-            className="mb-16"
+            className="font-body text-sm uppercase tracking-[0.25em] text-primary font-semibold mb-3"
           >
-            <p className="font-body text-sm uppercase tracking-[0.25em] text-primary font-semibold mb-3">What Drives Us</p>
-            <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Creating Pathways to Self-Sufficiency
-            </h2>
-            <div className="space-y-4 font-body text-muted-foreground leading-relaxed">
-              <p>
-                While numerous organizations work to address poverty, hunger, and education, Rice Kids recognized early that temporary relief doesn't solve the underlying problem. Children don't just need full stomachs; they need stable access to education, which is impossible when families are trapped in survival mode.
-              </p>
-              <p>
-                Our approach addresses what we call "opportunity poverty": the interconnected barriers that keep families locked in cycles of poverty. By ensuring children receive consistent support, we remove critical obstacles that force them out of classrooms and enable families to invest in education rather than just survival.
-              </p>
-              <p>
-                We work alongside partners to provide literacy programs, skills training, and health support, creating conditions where families can prioritize education and achieve economic independence. This integrated approach directly advances multiple UN Sustainable Development Goals: Quality Education, Reduced Inequalities, Zero Hunger, No Poverty, and Good Health & Well-being.
-              </p>
-            </div>
-          </motion.div>
+            What Drives Us
+          </motion.p>
 
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={valuesInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
-            <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Building Communities of Impact
-            </h2>
-            <div className="space-y-4 font-body text-muted-foreground leading-relaxed">
-              <p>
-                Rice Kids operates through a network of over 300 local and international partnerships spanning five U.S. states and multiple regions in India. Our partners include educational nonprofits, schools, shelters, and community providers working together to advance educational equity and opportunity.
-              </p>
-              <p>
-                We work with local partners to ensure children receive consistent nutritional support while simultaneously providing access to literacy programs, skills training, and health services, creating opportunities to advance educational access.
-              </p>
-              <p>
-                Rice Kids is built on the belief that lasting change requires community champions. We engage volunteers of all ages, with a special focus on empowering women to become advocates within their communities. By partnering with community members, we're cultivating what we call "The Giving Generation": individuals who understand that they have the power to create positive change. This community-driven model ensures our work is culturally relevant, locally sustained, and capable of creating ripple effects that extend far beyond our direct reach.
-              </p>
-            </div>
-          </motion.div>
+          <div className="grid md:grid-cols-2 gap-12 mt-8">
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              animate={valuesInView ? { opacity: 1, x: 0 } : {}}
+              transition={{ duration: 0.6 }}
+              className="bg-muted/50 rounded-2xl p-8"
+            >
+              <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-5">
+                Creating Pathways to Self-Sufficiency
+              </h2>
+              <div className="space-y-4 font-body text-muted-foreground leading-relaxed text-sm">
+                <p>
+                  While numerous organizations work to address poverty, hunger, and education, Rice Kids recognized early that temporary relief doesn't solve the underlying problem. Children don't just need full stomachs; they need stable access to education, which is impossible when families are trapped in survival mode.
+                </p>
+                <p>
+                  Our approach addresses what we call "opportunity poverty": the interconnected barriers that keep families locked in cycles of poverty. By ensuring children receive consistent support, we remove critical obstacles that force them out of classrooms and enable families to invest in education rather than just survival.
+                </p>
+                <p>
+                  We work alongside partners to provide literacy programs, skills training, and health support, creating conditions where families can prioritize education and achieve economic independence. This integrated approach directly advances multiple UN Sustainable Development Goals: Quality Education, Reduced Inequalities, Zero Hunger, No Poverty, and Good Health & Well-being.
+                </p>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              animate={valuesInView ? { opacity: 1, x: 0 } : {}}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="bg-muted/50 rounded-2xl p-8"
+            >
+              <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-5">
+                Building Communities of Impact
+              </h2>
+              <div className="space-y-4 font-body text-muted-foreground leading-relaxed text-sm">
+                <p>
+                  Rice Kids operates through a network of over 300 local and international partnerships spanning five U.S. states and multiple regions in India. Our partners include educational nonprofits, schools, shelters, and community providers working together to advance educational equity and opportunity.
+                </p>
+                <p>
+                  We work with local partners to ensure children receive consistent nutritional support while simultaneously providing access to literacy programs, skills training, and health services, creating opportunities to advance educational access.
+                </p>
+                <p>
+                  Rice Kids is built on the belief that lasting change requires community champions. We engage volunteers of all ages, with a special focus on empowering women to become advocates within their communities. By partnering with community members, we're cultivating what we call "The Giving Generation": individuals who understand that they have the power to create positive change. This community-driven model ensures our work is culturally relevant, locally sustained, and capable of creating ripple effects that extend far beyond our direct reach.
+                </p>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </section>
 
