@@ -56,13 +56,16 @@ const AboutUs = () => {
               <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-6">How We Started</h2>
               <div className="space-y-4 font-body text-muted-foreground leading-relaxed">
                 <p>
-                  Rice Kids is an initiative run by the Pranakh Foundation, founded by Anakh Sawhney when she was just 9 years old. The organization was born from a powerful realization: children facing poverty don't just need meals — they need pathways to education and opportunity.
+                  Rice Kids is an initiative run by the Pranakh Foundation, founded by Anakh Sawhney when she was just 9 years old. The organization was born from a powerful realization: children facing poverty don't just need meals, they need pathways to education and opportunity.
                 </p>
                 <p>
-                  Inspired by Sikhism's core principles of equality and selfless service, "Vand Chakhna" (to share what one has with others), Anakh began by mobilizing her family, friends, and neighbors to participate in local community service.
+                  Inspired by Sikhism's core principles of equality and selfless service, "Vand Chakhna" (to share what one has with others), Anakh began by mobilizing her family, friends, and neighbors to participate in local community service. But she quickly recognized a critical gap: most efforts provided temporary relief without addressing why children were dropping out of school or why families couldn't break cycles of poverty. In addition, almost all of these children were from minority and marginalized communities subjected to systemic discrimination.
                 </p>
                 <p>
-                  She quickly recognized a critical gap: most efforts provided temporary relief without addressing why children were dropping out of school or why families couldn't break cycles of poverty. This insight transformed Rice Kids from a simple food initiative into an integrated nutrition-education model.
+                  This insight transformed Rice Kids from a simple food initiative into an integrated model designed for these communities that combines nutrition, education, and health and family support. By partnering with shelters, schools, community centers, and educational nonprofits, Rice Kids has evolved into a comprehensive approach that removes educational barriers and builds pathways to economic independence.
+                </p>
+                <p>
+                  What started as local community drives has grown into a movement spanning five U.S. states and multiple regions in India, proving that sustainable change requires addressing interconnected challenges, not just feeding people today, but building their capacity for tomorrow.
                 </p>
               </div>
             </motion.div>
@@ -115,55 +118,52 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* Values */}
+      {/* Creating Pathways */}
       <section className="py-24 bg-background" ref={valuesRef}>
-        <div className="max-w-5xl mx-auto px-6 text-center">
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={valuesInView ? { opacity: 1, y: 0 } : {}}
-            className="font-body text-sm uppercase tracking-[0.25em] text-primary font-semibold mb-3"
-          >
-            What Drives Us
-          </motion.p>
-          <motion.h2
+        <div className="max-w-5xl mx-auto px-6">
+          <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={valuesInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ delay: 0.1 }}
-            className="font-display text-3xl md:text-4xl font-bold text-foreground mb-12"
+            transition={{ duration: 0.6 }}
+            className="mb-16"
           >
-            Creating Pathways to Self-Sufficiency
-          </motion.h2>
-          <div className="grid sm:grid-cols-2 gap-8">
-            {[
-              {
-                title: "Holistic Support",
-                desc: "We address nutrition, education, and health together — because tackling one without the others doesn't break the cycle.",
-              },
-              {
-                title: "Community Empowerment",
-                desc: "We empower women in communities to drive scalable change, building lasting impact from within.",
-              },
-              {
-                title: "Youth Leadership",
-                desc: "Founded by a young changemaker, we believe young people have the power to create transformative solutions.",
-              },
-              {
-                title: "Building Communities of Impact",
-                desc: "Through partnerships and grassroots action, we build networks of support that multiply our reach and effectiveness.",
-              },
-            ].map((value, i) => (
-              <motion.div
-                key={value.title}
-                initial={{ opacity: 0, y: 30 }}
-                animate={valuesInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ delay: 0.2 + i * 0.1 }}
-                className="bg-accent rounded-2xl p-8 text-left"
-              >
-                <h3 className="font-display text-lg font-bold text-foreground mb-2">{value.title}</h3>
-                <p className="font-body text-muted-foreground text-sm leading-relaxed">{value.desc}</p>
-              </motion.div>
-            ))}
-          </div>
+            <p className="font-body text-sm uppercase tracking-[0.25em] text-primary font-semibold mb-3">What Drives Us</p>
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-6">
+              Creating Pathways to Self-Sufficiency
+            </h2>
+            <div className="space-y-4 font-body text-muted-foreground leading-relaxed">
+              <p>
+                While numerous organizations work to address poverty, hunger, and education, Rice Kids recognized early that temporary relief doesn't solve the underlying problem. Children don't just need full stomachs; they need stable access to education, which is impossible when families are trapped in survival mode.
+              </p>
+              <p>
+                Our approach addresses what we call "opportunity poverty": the interconnected barriers that keep families locked in cycles of poverty. By ensuring children receive consistent support, we remove critical obstacles that force them out of classrooms and enable families to invest in education rather than just survival.
+              </p>
+              <p>
+                We work alongside partners to provide literacy programs, skills training, and health support, creating conditions where families can prioritize education and achieve economic independence. This integrated approach directly advances multiple UN Sustainable Development Goals: Quality Education, Reduced Inequalities, Zero Hunger, No Poverty, and Good Health & Well-being.
+              </p>
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={valuesInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-6">
+              Building Communities of Impact
+            </h2>
+            <div className="space-y-4 font-body text-muted-foreground leading-relaxed">
+              <p>
+                Rice Kids operates through a network of over 300 local and international partnerships spanning five U.S. states and multiple regions in India. Our partners include educational nonprofits, schools, shelters, and community providers working together to advance educational equity and opportunity.
+              </p>
+              <p>
+                We work with local partners to ensure children receive consistent nutritional support while simultaneously providing access to literacy programs, skills training, and health services, creating opportunities to advance educational access.
+              </p>
+              <p>
+                Rice Kids is built on the belief that lasting change requires community champions. We engage volunteers of all ages, with a special focus on empowering women to become advocates within their communities. By partnering with community members, we're cultivating what we call "The Giving Generation": individuals who understand that they have the power to create positive change. This community-driven model ensures our work is culturally relevant, locally sustained, and capable of creating ripple effects that extend far beyond our direct reach.
+              </p>
+            </div>
+          </motion.div>
         </div>
       </section>
 
