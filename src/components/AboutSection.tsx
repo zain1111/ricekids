@@ -32,20 +32,36 @@ const AboutSection = () => {
   return (
     <section id="about" className="py-24 bg-muted/50">
       <div className="max-w-7xl mx-auto px-6" ref={ref}>
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-6"
-        >
-          <p className="font-body text-sm uppercase tracking-[0.25em] text-primary font-semibold mb-3">About Rice Kids</p>
-          <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground mb-6">
-            Over half a million lives touched
-          </h2>
-          <p className="font-body text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            with an innovative model helping break the cycle of poverty. The unique approach relies on providing holistic support that removes all barriers so kids can remain in school and empowers the women in communities to drive scalable change. Established in 2018 to provide hot and nutritious meals, Anakh realized that simply feeding is not the solution and pivoted to focus on education for sustainable change. Working directly with children and youth, as well as through partnerships, we are helping kids remain in or return to mainstream education.
-          </p>
-        </motion.div>
+        <div className="grid md:grid-cols-2 gap-12 items-center mb-6">
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            animate={inView ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.6 }}
+          >
+            <p className="font-body text-sm uppercase tracking-[0.25em] text-primary font-semibold mb-3">About Rice Kids</p>
+            <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground mb-6">
+              Over half a million lives touched
+            </h2>
+            <p className="font-body text-lg text-muted-foreground leading-relaxed">
+              with an innovative model helping break the cycle of poverty. The unique approach relies on providing holistic support that removes all barriers so kids can remain in school and empowers the women in communities to drive scalable change. Established in 2018 to provide hot and nutritious meals, Anakh realized that simply feeding is not the solution and pivoted to focus on education for sustainable change. Working directly with children and youth, as well as through partnerships, we are helping kids remain in or return to mainstream education.
+            </p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            animate={inView ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="rounded-2xl overflow-hidden shadow-card aspect-video"
+          >
+            <iframe
+              src="https://www.youtube.com/embed/l1MymLtbDfU"
+              title="Anakh Sawhney: Rice Kids Creating Pathways From Poverty to Prosperity Via Education"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="w-full h-full"
+            />
+          </motion.div>
+        </div>
 
         <div className="grid md:grid-cols-3 gap-8 mt-16">
           {cards.map((card, i) => (
