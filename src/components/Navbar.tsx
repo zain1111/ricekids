@@ -9,6 +9,7 @@ const navLinks = [
   { label: "About Us", href: "/about-us" },
   { label: "Projects", href: "/projects" },
   { label: "News & Media", href: "/news-media" },
+  { label: "Donate", href: "/donate" },
 ];
 
 const Navbar = () => {
