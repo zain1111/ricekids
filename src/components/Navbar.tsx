@@ -38,14 +38,6 @@ const Navbar = () => {
               {link.label}
             </Link>
           ))}
-          <a
-            href="https://www.ricekids.org/#!"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-gradient-warm text-primary-foreground px-6 py-2.5 rounded-full font-body font-bold text-sm tracking-wide hover:opacity-90 transition-opacity"
-          >
-            Donate
-          </a>
         </div>
 
         {/* Mobile toggle */}
