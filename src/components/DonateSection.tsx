@@ -25,7 +25,7 @@ const DonateSection = () => {
           transition={{ delay: 0.1 }}
           className="font-display text-3xl md:text-5xl font-bold text-primary-foreground mb-4"
         >
-          Give a Little. Change a Lot.
+          Donate
         </motion.h2>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -33,7 +33,7 @@ const DonateSection = () => {
           transition={{ delay: 0.2 }}
           className="font-body text-primary-foreground/80 text-lg mb-10 max-w-2xl mx-auto"
         >
-          Creating pathways from poverty to prosperity through comprehensive support that creates equal educational opportunities.
+          Join thousands of donors who have helped Rice Kids serve the needy. No donation is too small. Please click on the link below to make your tax-exempt donation to us.
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -42,12 +42,12 @@ const DonateSection = () => {
           className="flex flex-col sm:flex-row gap-4 justify-center"
         >
           <a
-            href="https://www.ricekids.org/#!"
+            href="https://www.paypal.com/donate/?hosted_button_id=ricekids"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-primary-foreground text-primary px-10 py-4 rounded-full font-body font-bold text-lg hover:opacity-90 transition-opacity shadow-elevated"
           >
-            Stand With the Needy
+            Donate Now
           </a>
         </motion.div>
 
