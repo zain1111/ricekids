@@ -25,12 +25,12 @@ const ProjectsSection = () => {
           {projects.map((project, i) => {
             const pct = Math.round((project.raised / project.goal) * 100);
             return (
+              <Link to={`/projects/${project.slug}`} key={i}>
               <motion.div
-                key={i}
                 initial={{ opacity: 0, y: 30 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
                 transition={{ delay: 0.1 + i * 0.1 }}
-                className="group bg-card rounded-2xl overflow-hidden shadow-card hover:shadow-elevated transition-shadow duration-500"
+                className="group bg-card rounded-2xl overflow-hidden shadow-card hover:shadow-elevated transition-shadow duration-500 h-full"
               >
                 <div className="relative h-44 overflow-hidden">
                   <img
