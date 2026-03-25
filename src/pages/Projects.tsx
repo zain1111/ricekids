@@ -84,7 +84,8 @@ const Projects = () => {
                   </div>
                 </motion.div>
               </Link>
-            )}
+              );
+            })}
           </div>
 
           {visibleCount < allProjects.length && (
