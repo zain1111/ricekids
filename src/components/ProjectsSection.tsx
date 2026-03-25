@@ -1,36 +1,9 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import { Link } from "react-router-dom";
+import { allProjects } from "@/data/projects";
 
-const projects = [
-  {
-    title: "Driving Equity through Financial Literacy",
-    period: "Mar – Apr 2026",
-    raised: 1150,
-    goal: 7500,
-    image: "https://www.ricekids.org/wp-content/uploads/2026/01/Rice-Kids-Why-Education-1-1-scaled.jpg",
-  },
-  {
-    title: "New Year's School Supply Drive",
-    period: "Jan – Feb 2026",
-    raised: 4250,
-    goal: 6000,
-    image: "https://www.ricekids.org/wp-content/uploads/2026/01/School-Supply-Drive-SAGE-Rice-Kids-Anakh-Sawhney.png",
-  },
-  {
-    title: "Winter Coat Drive For Newark and Plainfield Schools",
-    period: "Dec 25 – Jan 26",
-    raised: 13500,
-    goal: 15000,
-    image: "https://www.ricekids.org/wp-content/uploads/2026/01/Winter-Coat-Drive.jpg",
-  },
-  {
-    title: "Educational Resources for NJ Kids",
-    period: "Nov – Dec 2025",
-    raised: 5000,
-    goal: 5000,
-    image: "https://www.ricekids.org/wp-content/uploads/2025/12/PXL_20230301_193531408-2.jpg",
-  },
-];
+const projects = allProjects.slice(0, 4);
 
 const ProjectsSection = () => {
   const ref = useRef(null);
@@ -52,12 +25,12 @@ const ProjectsSection = () => {
           {projects.map((project, i) => {
             const pct = Math.round((project.raised / project.goal) * 100);
             return (
+              <Link to={`/projects/${project.slug}`} key={i}>
               <motion.div
-                key={i}
                 initial={{ opacity: 0, y: 30 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
                 transition={{ delay: 0.1 + i * 0.1 }}
-                className="group bg-card rounded-2xl overflow-hidden shadow-card hover:shadow-elevated transition-shadow duration-500"
+                className="group bg-card rounded-2xl overflow-hidden shadow-card hover:shadow-elevated transition-shadow duration-500 h-full"
               >
                 <div className="relative h-44 overflow-hidden">
                   <img
@@ -85,6 +58,7 @@ const ProjectsSection = () => {
                   </div>
                 </div>
               </motion.div>
+              </Link>
             );
           })}
         </div>
