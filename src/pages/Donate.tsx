@@ -197,7 +197,7 @@ const Donate = () => {
         </div>
       </section>
 
-      Footer />
+      <Footer />
     </div>
   );
 };
