@@ -9,6 +9,7 @@ const navLinks = [
   { label: "About Us", href: "/about-us" },
   { label: "Projects", href: "/projects" },
   { label: "News & Media", href: "/news-media" },
+  { label: "Donate", href: "/donate" },
 ];
 
 const Navbar = () => {
@@ -37,14 +38,6 @@ const Navbar = () => {
               {link.label}
             </Link>
           ))}
-          <a
-            href="https://www.ricekids.org/#!"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-gradient-warm text-primary-foreground px-6 py-2.5 rounded-full font-body font-bold text-sm tracking-wide hover:opacity-90 transition-opacity"
-          >
-            Donate
-          </a>
         </div>
 
         {/* Mobile toggle */}
@@ -76,15 +69,6 @@ const Navbar = () => {
                   {link.label}
                 </Link>
               ))}
-              <a
-                href="https://www.ricekids.org/#!"
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => setOpen(false)}
-                className="bg-gradient-warm text-primary-foreground px-6 py-2.5 rounded-full font-body font-bold text-sm tracking-wide text-center"
-              >
-                Donate
-              </a>
             </div>
           </motion.div>
         )}
