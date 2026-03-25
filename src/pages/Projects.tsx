@@ -45,12 +45,12 @@ const Projects = () => {
               const pct = Math.round((project.raised / project.goal) * 100);
               const isComplete = pct >= 100;
               return (
-                <motion.div
-                  key={i}
+              <Link to={`/projects/${project.slug}`} key={i}>
+              <motion.div
                   initial={{ opacity: 0, y: 30 }}
                   animate={inView ? { opacity: 1, y: 0 } : {}}
                   transition={{ delay: Math.min(i * 0.05, 0.6) }}
-                  className="group bg-card rounded-2xl overflow-hidden shadow-card hover:shadow-elevated transition-shadow duration-500"
+                  className="group bg-card rounded-2xl overflow-hidden shadow-card hover:shadow-elevated transition-shadow duration-500 h-full"
                 >
                   <div className="relative h-52 overflow-hidden">
                     <img
