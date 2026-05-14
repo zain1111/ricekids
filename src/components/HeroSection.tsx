@@ -34,6 +34,7 @@ const slides: Slide[] = [
     image:
       "https://www.ricekids.org/wp-content/uploads/2025/11/Featured-on-2.png",
     eyebrow: "FEATURED ON",
+    logo: "https://www.ricekids.org/wp-content/uploads/2025/11/NIA-Logo-3.webp",
     title: (
       <>
         Anakh Sawhney becomes youngest
