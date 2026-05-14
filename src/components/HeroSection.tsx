@@ -5,6 +5,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 type Slide = {
   image: string;
   eyebrow?: string;
+  logo?: string;
   title: React.ReactNode;
   subtitle?: React.ReactNode;
   cta?: { label: string; href: string };
@@ -33,6 +34,7 @@ const slides: Slide[] = [
     image:
       "https://www.ricekids.org/wp-content/uploads/2025/11/Featured-on-2.png",
     eyebrow: "FEATURED ON",
+    logo: "https://www.ricekids.org/wp-content/uploads/2025/11/NIA-Logo-3.webp",
     title: (
       <>
         Anakh Sawhney becomes youngest
@@ -61,6 +63,7 @@ const slides: Slide[] = [
     image:
       "https://www.ricekids.org/wp-content/uploads/2025/11/Featured-on-3.png",
     eyebrow: "FEATURED ON",
+    logo: "https://www.ricekids.org/wp-content/uploads/2025/11/etedge-insights-logon2-181x61-1.png",
     title: (
       <>
         Teen founder Anakh Sawhney tackles
@@ -80,6 +83,7 @@ const slides: Slide[] = [
     image:
       "https://www.ricekids.org/wp-content/uploads/2025/10/Featured-on-1-1.png",
     eyebrow: "FEATURED ON",
+    logo: "https://www.ricekids.org/wp-content/uploads/2025/10/bw-disrupt-logo-2.webp",
     title: (
       <>
         Rice Kids Expands Education
@@ -160,25 +164,34 @@ const HeroSection = () => {
           alignLeft ? "text-left" : "text-center"
         }`}
       >
-        <AnimatePresence mode="wait">
+        <AnimatePresence mode="popLayout">
           <motion.div
             key={index}
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.7 }}
+            exit={{ opacity: 0, y: -10 }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
             className={alignLeft ? "max-w-3xl" : "max-w-4xl mx-auto"}
           >
             {slide.eyebrow && (
-              <p className="font-body text-primary-foreground/80 text-sm uppercase tracking-[0.3em] font-semibold mb-6">
+              <p className="font-body text-primary-foreground/80 text-xs md:text-sm uppercase tracking-[0.3em] font-semibold mb-4">
                 {slide.eyebrow}
               </p>
             )}
-            <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-primary-foreground leading-tight mb-6">
+            {slide.logo && (
+              <img
+                src={slide.logo}
+                alt="Publication logo"
+                className={`h-10 md:h-12 lg:h-14 w-auto object-contain mb-5 ${
+                  alignLeft ? "" : "mx-auto"
+                } bg-white/90 rounded px-3 py-2`}
+              />
+            )}
+            <h1 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground leading-tight mb-5">
               {slide.title}
             </h1>
             {slide.subtitle && (
-              <p className="font-body text-lg md:text-xl text-primary-foreground/90 mb-10 leading-relaxed">
+              <p className="font-body text-base md:text-lg text-primary-foreground/90 mb-8 leading-relaxed">
                 {slide.subtitle}
               </p>
             )}
@@ -192,14 +205,14 @@ const HeroSection = () => {
                   href={slide.cta.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-gradient-warm text-primary-foreground px-10 py-4 rounded-full font-body font-bold text-lg hover:opacity-90 transition-opacity shadow-elevated"
+                  className="bg-gradient-warm text-primary-foreground px-8 py-3 rounded-full font-body font-bold text-base hover:opacity-90 transition-opacity shadow-elevated"
                 >
                   {slide.cta.label}
                 </a>
                 {index === 0 && (
                   <a
                     href="#about"
-                    className="border-2 border-primary-foreground/40 text-primary-foreground px-10 py-4 rounded-full font-body font-bold text-lg hover:bg-primary-foreground/10 transition-colors"
+                    className="border-2 border-primary-foreground/40 text-primary-foreground px-8 py-3 rounded-full font-body font-bold text-base hover:bg-primary-foreground/10 transition-colors"
                   >
                     Learn More
                   </a>
