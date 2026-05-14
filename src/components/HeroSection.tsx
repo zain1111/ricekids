@@ -83,6 +83,7 @@ const slides: Slide[] = [
     image:
       "https://www.ricekids.org/wp-content/uploads/2025/10/Featured-on-1-1.png",
     eyebrow: "FEATURED ON",
+    logo: "https://www.ricekids.org/wp-content/uploads/2025/10/bw-disrupt-logo-2.webp",
     title: (
       <>
         Rice Kids Expands Education
