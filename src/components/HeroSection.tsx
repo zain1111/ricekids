@@ -5,6 +5,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 type Slide = {
   image: string;
   eyebrow?: string;
+  logo?: string;
   title: React.ReactNode;
   subtitle?: React.ReactNode;
   cta?: { label: string; href: string };
