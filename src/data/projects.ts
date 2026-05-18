@@ -16,10 +16,10 @@ export const allProjects: Project[] = [
     period: "April – May 2026",
     raised: 2500,
     goal: 50000,
-    donors: 18,
+    donors: 26,
     image: "https://www.ricekids.org/wp-content/uploads/2026/03/PXL_20260301_190855566-1-scaled.jpg",
     description:
-      "Equipping underserved classrooms with laptops, tablets, and digital learning tools so every child can access modern, technology-enabled education.",
+      "Modern learning depends on modern tools, yet many kids in marginalized schools still lack the basics their peers use daily. This drive puts calculators, Chromebooks, and iPads directly into the hands of students who need them.",
   },
   {
     slug: "driving-equity-through-financial-literacy",
@@ -27,10 +27,10 @@ export const allProjects: Project[] = [
     period: "March – April 2026",
     raised: 4250,
     goal: 7500,
-    donors: 34,
+    donors: 18,
     image: "https://www.ricekids.org/wp-content/uploads/2026/01/Rice-Kids-Why-Education-1-1-scaled.jpg",
     description:
-      "Bringing essential financial literacy — budgeting, saving, and money management — to underserved youth so they can build long-term economic independence.",
+      "Financial literacy is rarely taught in school, yet it shapes a child's entire future. We bring in financial experts to walk students through income, assets, liabilities, and investing — early exposure that helps them make confident decisions on the path to financial independence.",
   },
   {
     slug: "new-years-school-supply-drive",
@@ -38,11 +38,11 @@ export const allProjects: Project[] = [
     period: "Jan – Feb 2026",
     raised: 6250,
     goal: 6000,
-    donors: 52,
+    donors: 99,
     image:
       "https://www.ricekids.org/wp-content/uploads/2026/01/School-Supply-Drive-SAGE-Rice-Kids-Anakh-Sawhney.png",
     description:
-      "Collecting notebooks, pencils, backpacks, and other essential supplies so students in underserved New Jersey schools can start the new year ready to learn.",
+      "With budgets cut at the start of the new marking period, teachers were paying for classroom supplies out of pocket. This drive delivered the notebooks, pencils, and learning tools they needed so they could focus on teaching, not funding.",
   },
   {
     slug: "winter-coat-drive-for-newark-and-plainfield-schools",
@@ -50,10 +50,10 @@ export const allProjects: Project[] = [
     period: "Nov – Dec 2025",
     raised: 13500,
     goal: 15000,
-    donors: 110,
+    donors: 302,
     image: "https://www.ricekids.org/wp-content/uploads/2026/01/Winter-Coat-Drive.jpg",
     description:
-      "Providing warm coats, gloves, and hats to students in Newark and Plainfield so no child has to face winter without proper protection.",
+      "Many K-8 students in nearby school districts head into winter without a warm coat. Thanks to volunteers, teachers, and donors, this drive collected coats and jackets to keep these kids protected through the cold months.",
   },
   {
     slug: "educational-resources-for-nj-kids",
@@ -61,10 +61,10 @@ export const allProjects: Project[] = [
     period: "Nov – Dec 2025",
     raised: 5000,
     goal: 5000,
-    donors: 42,
+    donors: 58,
     image: "https://www.ricekids.org/wp-content/uploads/2025/12/PXL_20230301_193531408-1.jpg",
     description:
-      "Supplying books, learning kits, and classroom materials to New Jersey schools that lack adequate funding for basic educational resources.",
+      "Hundreds of kids in our community came together to support hundreds more in another NJ district who needed basic educational resources. Volunteers shopped, packed, and delivered supplies along with a holiday surprise that left every child smiling.",
   },
   {
     slug: "holistic-education-support-for-kids",
@@ -72,10 +72,10 @@ export const allProjects: Project[] = [
     period: "Oct – Dec 2025",
     raised: 48000,
     goal: 50000,
-    donors: 310,
+    donors: 8,
     image: "https://www.ricekids.org/wp-content/uploads/2025/09/IMG_0006-scaled.jpg",
     description:
-      "Combining tutoring, mentorship, nutritious meals, and emotional wellness programs to support every dimension of a child's development.",
+      "Lasting impact requires more than school supplies. This initiative wraps education with nutrition, health, and care — the holistic support kids need to stay focused on learning and build a real path out of poverty. This is only the beginning of an ambitious effort to reach thousands.",
   },
   {
     slug: "rice-kids-sunaayy",
@@ -83,10 +83,10 @@ export const allProjects: Project[] = [
     period: "Aug – Sep 2025",
     raised: 5050,
     goal: 5000,
-    donors: 45,
+    donors: 56,
     image: "https://www.ricekids.org/wp-content/uploads/2025/09/IMG_0039-scaled.jpg",
     description:
-      "A joint initiative with Sunaay delivering educational support and creative arts programming to underserved children.",
+      "A partnership with the Sunaayy Foundation, an organization helping children return to school through education and skill development. Together we extend learning opportunities to kids who had fallen out of the system.",
   },
   {
     slug: "education-supplies-for-kids",
@@ -94,10 +94,10 @@ export const allProjects: Project[] = [
     period: "May – Jul 2025",
     raised: 2000,
     goal: 2000,
-    donors: 20,
+    donors: 28,
     image: "https://www.ricekids.org/wp-content/uploads/2025/09/IMG_9998-scaled.jpg",
     description:
-      "Providing textbooks, stationery, and learning materials to children who lack access to basic educational tools.",
+      "Many children arriving at our centers lack even the most basic school supplies, which makes following lessons nearly impossible. This program puts essential tools directly in their hands so they can fully participate in learning.",
   },
   {
     slug: "supporting-kids-in-our-jharkhand-center",
@@ -105,10 +105,10 @@ export const allProjects: Project[] = [
     period: "Feb – Apr 2025",
     raised: 5050,
     goal: 5000,
-    donors: 48,
+    donors: 59,
     image: "https://www.ricekids.org/wp-content/uploads/2025/12/Rice-Kids-Jharkhand-Center.jpg",
     description:
-      "Funding educational programs, nutrition, and infrastructure for the most marginalized rural children at our Jharkhand center.",
+      "At our Jharkhand center, young learners are buried in their books and lifting each other up despite difficult circumstances. Moments like these are exactly why we keep going — every child deserves the resources and support to learn and grow.",
   },
   {
     slug: "ncr-street-education-program",
@@ -116,10 +116,10 @@ export const allProjects: Project[] = [
     period: "Feb – Apr 2025",
     raised: 7650,
     goal: 7500,
-    donors: 62,
+    donors: 61,
     image: "https://www.ricekids.org/wp-content/uploads/2025/09/IMG_9940-scaled.jpg",
     description:
-      "Bringing literacy, basic math, and life-skills classes directly to children living and working on the streets of India's National Capital Region.",
+      "We helped local partners recruit and train teachers for children who had dropped out of school. The goal: bring them up to speed and ready for re-admission so they aren't left behind.",
   },
   {
     slug: "nanaks-gift",
@@ -127,22 +127,22 @@ export const allProjects: Project[] = [
     period: "Nov 24 – Jan 25",
     raised: 8200,
     goal: 7500,
-    donors: 70,
+    donors: 156,
     image:
       "https://www.ricekids.org/wp-content/uploads/2025/02/Rice-kids-nanaks-gift-20-30-poster-scaled.jpg",
     description:
-      "Inspired by the spirit of giving, this drive delivered warm meals, clothing, and learning materials to hundreds of children during the holiday season.",
+      "Inspired by Guru Nanak's teaching of Vand Chakhna and selfless service, multiple teams of families, kids, and volunteers came together to prepare and serve hot meals at dozens of locations across the Northeast.",
   },
   {
     slug: "thanksgiving-winter-drive",
     title: "Thanksgiving Drive-Thru",
     period: "November 2024",
-    raised: 2600,
-    goal: 3000,
-    donors: 25,
+    raised: 6150,
+    goal: 6000,
+    donors: 89,
     image: "https://www.ricekids.org/wp-content/uploads/2025/02/IMG-20241124-WA0023.jpg",
     description:
-      "A community drive-thru distributing complete Thanksgiving meal packages to families in need.",
+      "A community-driven Thanksgiving event where families in need received complete holiday meal packages through a convenient drive-thru format.",
   },
   {
     slug: "sponsorship-program",
@@ -150,10 +150,10 @@ export const allProjects: Project[] = [
     period: "Oct – Dec 2024",
     raised: 2200,
     goal: 2000,
-    donors: 18,
+    donors: 21,
     image: "https://www.ricekids.org/wp-content/uploads/2025/12/IMG_0057-n.jpg",
     description:
-      "Connecting donors directly with children for ongoing support across education, nutrition, and well-being.",
+      "Our sponsorship program pairs donors directly with kids who need ongoing support — covering education, nutrition, and overall well-being month after month.",
   },
   {
     slug: "investing-in-physical-education",
@@ -161,10 +161,10 @@ export const allProjects: Project[] = [
     period: "Oct – Nov 2024",
     raised: 3000,
     goal: 3000,
-    donors: 30,
+    donors: 38,
     image: "https://www.ricekids.org/wp-content/uploads/2025/12/IMG-20221231-WA0155-1.jpg",
     description:
-      "Equipping schools with sports gear, organized activities, and play areas so children can develop physically alongside academically.",
+      "Physical activity is just as important as academics. This project equipped schools with sports gear, organized activities, and play space for kids who otherwise had none.",
   },
   {
     slug: "upper-east-side-event",
@@ -172,10 +172,10 @@ export const allProjects: Project[] = [
     period: "October 2024",
     raised: 1355,
     goal: 1500,
-    donors: 15,
+    donors: 39,
     image: "https://www.ricekids.org/wp-content/uploads/2025/02/PXL_20241123_144443989-scaled.jpg",
     description:
-      "A community fundraising gathering on Manhattan's Upper East Side to raise awareness and funds for Rice Kids' education initiatives.",
+      "A community fundraiser hosted on Manhattan's Upper East Side, bringing supporters together to raise both awareness and funds for Rice Kids' education initiatives.",
   },
   {
     slug: "education-supplies-program",
@@ -183,11 +183,11 @@ export const allProjects: Project[] = [
     period: "Sep – Oct 2024",
     raised: 3000,
     goal: 3000,
-    donors: 28,
+    donors: 66,
     image:
       "https://www.ricekids.org/wp-content/uploads/2025/12/Rice-Kids-Teacher-Supplies-Program-1.jpg",
     description:
-      "Providing teachers and students at underfunded schools with the classroom supplies needed for a better learning environment.",
+      "Providing teachers and students in underfunded schools with the classroom supplies they need to create a better learning environment.",
   },
   {
     slug: "establishing-a-new-center",
@@ -195,10 +195,10 @@ export const allProjects: Project[] = [
     period: "Aug – Sep 2024",
     raised: 6500,
     goal: 7000,
-    donors: 55,
+    donors: 80,
     image: "https://www.ricekids.org/wp-content/uploads/2025/12/IMG_0001.jpg",
     description:
-      "Expanding our reach by opening a new education center to serve more children in underserved communities.",
+      "The focus and hard work on display at our centers is what keeps us launching new ones. With the support of local community members, donors, and volunteers, we opened another center for kids who needed it.",
   },
   {
     slug: "setting-up-the-bengal-center",
@@ -206,10 +206,10 @@ export const allProjects: Project[] = [
     period: "Jun – Aug 2024",
     raised: 4500,
     goal: 4500,
-    donors: 40,
+    donors: 49,
     image: "https://www.ricekids.org/wp-content/uploads/2025/12/Rice-Kids-Bengal-School.jpg",
     description:
-      "Setting up a dedicated education center in Bengal to give local children quality learning, materials, and mentorship.",
+      "Working alongside local partners and community leaders, we set up a new center in Bengal. Recent visits confirmed the impact — bright, engaged kids connecting with their books and lighting up the room.",
   },
   {
     slug: "delivering-packages-of-hope",
@@ -217,10 +217,10 @@ export const allProjects: Project[] = [
     period: "Jul – Aug 2024",
     raised: 2800,
     goal: 3000,
-    donors: 22,
+    donors: 64,
     image: "https://www.ricekids.org/wp-content/uploads/2024/10/PXL_20240413_165642509-scaled.jpg",
     description:
-      "Care packages of essential supplies, educational materials, and hygiene items delivered directly to families and children in need.",
+      "When everything else gets delivered to the door, why shouldn't help? Volunteers ran this drive to bring supplies straight to Central Jersey residents facing tough circumstances.",
   },
   {
     slug: "kasa-south-amboy-partnership",
@@ -228,10 +228,10 @@ export const allProjects: Project[] = [
     period: "April – May 2024",
     raised: 6900,
     goal: 7500,
-    donors: 58,
+    donors: 148,
     image: "https://www.ricekids.org/wp-content/uploads/2024/10/PXL_20240413_135504026-scaled.jpg",
     description:
-      "A partnership with KASA and the South Amboy community providing educational resources and support to local children and families.",
+      "Rice Kids joined forces with Kaur and Singh Academy and South Amboy Kitchen for a hugely successful drive. Like-minded families and volunteers prepared and served hot meals at more than a dozen locations across the Northeast.",
   },
   {
     slug: "hunger-heroes",
@@ -239,10 +239,10 @@ export const allProjects: Project[] = [
     period: "Jan – March 2024",
     raised: 5000,
     goal: 5000,
-    donors: 50,
+    donors: 114,
     image: "https://www.ricekids.org/wp-content/uploads/2024/10/Hunger-Heroes-Program-1-1.png",
     description:
-      "Fighting childhood hunger with consistent, nutritious meals delivered to children in food-insecure communities.",
+      "A program that rallied over a hundred donors and a team of volunteer heroes to feed marginalized individuals and families across our neighborhoods and beyond.",
   },
   {
     slug: "help-at-the-doorstep",
@@ -250,10 +250,10 @@ export const allProjects: Project[] = [
     period: "Oct – Nov 2023",
     raised: 2000,
     goal: 2000,
-    donors: 18,
+    donors: 46,
     image: "https://www.ricekids.org/wp-content/uploads/2024/10/PXL_20240413_162630587-scaled.jpg",
     description:
-      "Bringing food, clothing, and educational materials directly to families' doorsteps in underserved neighborhoods.",
+      "We partnered with local NJ businesses to reach hundreds of families across New Jersey, delivering hot, nutritious meals right to their doorsteps.",
   },
   {
     slug: "sandwiches-with-a-smile",
@@ -261,10 +261,10 @@ export const allProjects: Project[] = [
     period: "September 2023",
     raised: 2000,
     goal: 2000,
-    donors: 20,
+    donors: 49,
     image: "https://www.ricekids.org/wp-content/uploads/2023/11/IMG_4256-1.jpg",
     description:
-      "Volunteers came together to prepare and distribute hundreds of sandwiches to homeless individuals and families.",
+      "Kids have endless energy — and channeling it into service produces something special. Volunteers came together to prepare and distribute hundreds of sandwiches to neighbors in need.",
   },
   {
     slug: "balanced-meals-for-the-local-community",
@@ -272,10 +272,10 @@ export const allProjects: Project[] = [
     period: "August 2023",
     raised: 1300,
     goal: 1500,
-    donors: 12,
+    donors: 37,
     image: "https://www.ricekids.org/wp-content/uploads/2023/11/PXL_20230304_150423735.jpg",
     description:
-      "Preparing and distributing nutritionally balanced meals to local families facing food insecurity.",
+      "Preparing and distributing nutritionally balanced meals to local families navigating food insecurity.",
   },
   {
     slug: "holistic-education-support",
@@ -283,10 +283,10 @@ export const allProjects: Project[] = [
     period: "Jul – Aug 2023",
     raised: 1600,
     goal: 1500,
-    donors: 14,
+    donors: 19,
     image: "https://www.ricekids.org/wp-content/uploads/2025/12/Rice-Kids-Visiting-Rural-Center.jpg",
     description:
-      "Supporting children's growth through tutoring, nutrition, and creative arts programs in a single integrated effort.",
+      "Supporting children's full development through a combination of academic tutoring, nutritional support, and creative arts programming in one integrated effort.",
   },
   {
     slug: "north-jersey-hot-meals-cook-off-and-service",
@@ -294,10 +294,10 @@ export const allProjects: Project[] = [
     period: "July 2023",
     raised: 1200,
     goal: 1200,
-    donors: 11,
+    donors: 31,
     image: "https://www.ricekids.org/wp-content/uploads/2023/11/PXL_20230213_000910226.jpg",
     description:
-      "A volunteer-led cook-off in North Jersey preparing and serving hot meals to community members in need.",
+      "A volunteer-led cook-off in North Jersey that turned into hot meals for community members in need.",
   },
   {
     slug: "partnering-with-nourish-nj",
@@ -305,7 +305,7 @@ export const allProjects: Project[] = [
     period: "May – June 2023",
     raised: 900,
     goal: 1000,
-    donors: 9,
+    donors: 28,
     image: "https://www.ricekids.org/wp-content/uploads/2023/11/PXL_20230127_141545939.jpg",
     description:
       "Teaming up with Nourish NJ to prepare and serve meals to neighbors facing hunger in the Morristown area.",
@@ -316,10 +316,10 @@ export const allProjects: Project[] = [
     period: "April 2023",
     raised: 3000,
     goal: 3000,
-    donors: 30,
+    donors: 69,
     image: "https://www.ricekids.org/wp-content/uploads/2023/11/PXL_20230304_164543878.jpg",
     description:
-      "A citywide effort collecting and distributing warm clothing, hygiene kits, and food to homeless individuals across New York.",
+      "A citywide effort across New York collecting and distributing warm clothing, hygiene kits, and food to homeless individuals and families.",
   },
   {
     slug: "bags-of-hope",
@@ -327,10 +327,10 @@ export const allProjects: Project[] = [
     period: "March 2023",
     raised: 5000,
     goal: 5000,
-    donors: 45,
+    donors: 102,
     image: "https://www.ricekids.org/wp-content/uploads/2023/11/IMG_2207.jpg",
     description:
-      "Bags filled with school supplies, snacks, and personal-care items distributed to children to help them succeed in school.",
+      "Bags packed with school supplies, snacks, and personal-care items, distributed to children to help them show up ready and confident at school.",
   },
   {
     slug: "rural-center-project",
@@ -338,10 +338,10 @@ export const allProjects: Project[] = [
     period: "Jan – May 2023",
     raised: 3600,
     goal: 4000,
-    donors: 32,
+    donors: 39,
     image: "https://www.ricekids.org/wp-content/uploads/2025/12/Rice-Kids-Empowering-Women-1-1.jpg",
     description:
-      "Establishing and supporting rural education centers in India to bring quality learning and empowerment to remote villages.",
+      "Establishing and supporting rural education centers in India to bring quality learning and empowerment programs to children in remote villages.",
   },
   {
     slug: "feed-5k-program",
@@ -349,11 +349,11 @@ export const allProjects: Project[] = [
     period: "Nov 22 – Feb 23",
     raised: 15000,
     goal: 15000,
-    donors: 120,
+    donors: 376,
     image:
       "https://www.ricekids.org/wp-content/uploads/2022/12/Gray-Minimalist-Elegant-Fundraising-Disability-GoFundMe-Story-Image-2.png",
     description:
-      "An ambitious initiative to feed 5,000 people in need through community fundraising and volunteer meal service.",
+      "An ambitious initiative to feed 5,000 people in need. Through generous community support and a dedicated volunteer base, the program delivered nutritious meals at scale.",
   },
   {
     slug: "feeding-the-homeless-in-the-upper-west-side",
@@ -361,7 +361,7 @@ export const allProjects: Project[] = [
     period: "Nov 2022",
     raised: 1500,
     goal: 1500,
-    donors: 14,
+    donors: 63,
     image: "https://www.ricekids.org/wp-content/uploads/2022/12/IMG_2015.jpg",
     description:
       "Volunteers prepared and served warm meals to homeless individuals in Manhattan's Upper West Side.",
@@ -372,7 +372,7 @@ export const allProjects: Project[] = [
     period: "Sep – Oct 2022",
     raised: 2000,
     goal: 2000,
-    donors: 17,
+    donors: 81,
     image: "https://www.ricekids.org/wp-content/uploads/2022/12/IMG_1931-543x407.jpg",
     description:
       "Stocking local pantries with fresh produce and staples to support families facing food insecurity.",
@@ -383,7 +383,7 @@ export const allProjects: Project[] = [
     period: "July – Aug 2022",
     raised: 980,
     goal: 1200,
-    donors: 10,
+    donors: 39,
     image: "https://www.ricekids.org/wp-content/uploads/2022/12/IMG_1937.jpg",
     description:
       "Partnering with the Advent community to provide meals and essentials to neighbors in need.",
@@ -394,7 +394,7 @@ export const allProjects: Project[] = [
     period: "May – June 2022",
     raised: 1500,
     goal: 1500,
-    donors: 13,
+    donors: 72,
     image: "https://www.ricekids.org/wp-content/uploads/2024/11/IMG_9700.jpg",
     description:
       "A local food drive in Morristown collecting and distributing essentials to families in need.",
@@ -405,7 +405,7 @@ export const allProjects: Project[] = [
     period: "February – April 2022",
     raised: 1000,
     goal: 1000,
-    donors: 9,
+    donors: 56,
     image: "https://www.ricekids.org/wp-content/uploads/2022/07/IMG_9711-543x407.jpg",
     description:
       "Supporting a local food shelter with meals, supplies, and volunteer service for community members in need.",
@@ -416,7 +416,7 @@ export const allProjects: Project[] = [
     period: "November – December 2021",
     raised: 5150,
     goal: 5000,
-    donors: 44,
+    donors: 322,
     image: "https://www.ricekids.org/wp-content/uploads/2022/07/IMG_9688.jpg",
     description:
       "Delivering complete holiday meals to families so no household goes without a warm meal during the season.",
@@ -427,7 +427,7 @@ export const allProjects: Project[] = [
     period: "September – October 2021",
     raised: 2000,
     goal: 2000,
-    donors: 18,
+    donors: 82,
     image: "https://www.ricekids.org/wp-content/uploads/2022/07/IMG_9710.jpg",
     description:
       "Providing emergency food and essentials to families navigating sudden hardships and unforeseen crises.",
@@ -438,7 +438,7 @@ export const allProjects: Project[] = [
     period: "April – July 2021",
     raised: 18750,
     goal: 15000,
-    donors: 150,
+    donors: 822,
     image: "https://www.ricekids.org/wp-content/uploads/2022/07/Project-6-3-543x407.jpg",
     description:
       "Mobilized during India's devastating COVID-19 wave to deliver oxygen concentrators, medical supplies, food packages, and financial aid to affected families.",
@@ -449,7 +449,7 @@ export const allProjects: Project[] = [
     period: "January – March 2021",
     raised: 2800,
     goal: 3000,
-    donors: 24,
+    donors: 140,
     image: "https://www.ricekids.org/wp-content/uploads/2022/07/IMG_0744-543x407.jpg",
     description:
       "Restocking local food banks with staples and fresh items to support neighbors facing hunger.",
@@ -460,7 +460,7 @@ export const allProjects: Project[] = [
     period: "November – December 2020",
     raised: 2400,
     goal: 2400,
-    donors: 22,
+    donors: 124,
     image: "https://www.ricekids.org/wp-content/uploads/2022/07/IMG_9685-543x407.jpg",
     description:
       "Distributing hot meals and essentials to homeless community members across New York City during the winter season.",
@@ -471,7 +471,7 @@ export const allProjects: Project[] = [
     period: "July – September 2020",
     raised: 4450,
     goal: 4500,
-    donors: 38,
+    donors: 379,
     image: "https://www.ricekids.org/wp-content/uploads/2022/07/Project-3-1-543x407.jpg",
     description:
       "Continuing food relief in India's National Capital Region for daily-wage workers and families impacted by COVID-19 lockdowns.",
@@ -482,7 +482,7 @@ export const allProjects: Project[] = [
     period: "June – July 2020",
     raised: 3300,
     goal: 3000,
-    donors: 28,
+    donors: 264,
     image: "https://www.ricekids.org/wp-content/uploads/2022/07/IMG_0774.jpg",
     description:
       "Preparing and distributing meals to New Jersey families hit hardest by the pandemic's economic impact.",
@@ -493,7 +493,7 @@ export const allProjects: Project[] = [
     period: "March – May 2020",
     raised: 6800,
     goal: 10000,
-    donors: 60,
+    donors: 450,
     image: "https://www.ricekids.org/wp-content/uploads/2022/07/Project-1-2--543x407.jpg",
     description:
       "Emergency food packets distributed across India's NCR to migrant workers and families stranded by the first COVID-19 lockdown.",
@@ -504,7 +504,7 @@ export const allProjects: Project[] = [
     period: "Feb – April 2020",
     raised: 1290,
     goal: 1000,
-    donors: 14,
+    donors: 30,
     image:
       "https://www.ricekids.org/wp-content/uploads/2020/02/Rice-Kids-Anakh-11th-Birthday-Featured.jpg",
     description:
@@ -516,7 +516,7 @@ export const allProjects: Project[] = [
     period: "April 13, 2019",
     raised: 2000,
     goal: 2000,
-    donors: 18,
+    donors: 28,
     image:
       "https://www.ricekids.org/wp-content/uploads/2020/02/Rice-Kids-Serving-Blind-India-Featured.jpg",
     description:
@@ -528,7 +528,7 @@ export const allProjects: Project[] = [
     period: "Jan 19, 2019",
     raised: 720,
     goal: 500,
-    donors: 8,
+    donors: 32,
     image:
       "https://www.ricekids.org/wp-content/uploads/2020/02/Rice-Kids-Agape-house-somerville-featured.jpg",
     description:
@@ -540,7 +540,7 @@ export const allProjects: Project[] = [
     period: "Oct 28, 2018",
     raised: 1225,
     goal: 1000,
-    donors: 10,
+    donors: 43,
     image:
       "https://www.ricekids.org/wp-content/uploads/2020/02/Rice-Kids-Serving-Homeless-NY-Featured-Image.jpg",
     description:
