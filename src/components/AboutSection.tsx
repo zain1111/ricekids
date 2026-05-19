@@ -5,19 +5,19 @@ const cards = [
   {
     title: "Vision",
     description: "Every person lives with dignity and equal opportunity.",
-    image: "https://www.ricekids.org/wp-content/uploads/2025/09/IMG_9999-scaled.jpg",
+    image: "/images/IMG_9999-scaled.jpg",
   },
   {
     title: "Mission",
     description:
       "Empower marginalized communities to break cycles of poverty by providing comprehensive nutrition, education, and health support that create sustainable pathways to economic independence.",
-    image: "https://www.ricekids.org/wp-content/uploads/2026/01/Newark-School-scaled.jpg",
+    image: "/images/Newark-School-scaled.jpg",
   },
   {
     title: "Why Education?",
     description:
       "Education transforms lives and communities, but must be combined with holistic nutrition and health support. Education doesn't just change individual futures — it breaks generational cycles and builds stronger, more equitable communities.",
-    image: "https://www.ricekids.org/wp-content/uploads/2026/01/Rice-Kids-Why-Education-1-scaled.jpg",
+    image: "/images/Rice-Kids-Why-Education-1-scaled.jpg",
   },
 ];
 

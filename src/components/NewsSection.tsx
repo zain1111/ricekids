@@ -7,31 +7,31 @@ const newsItems = [
     title: "Breaking Age Barriers in Leadership, with 16-year old Anakh Sawhney",
     excerpt: "In this inspiring episode, we sit down with Anakh Sawhney, the 16-year-old founder and CEO of Rice Kids — a global nonprofit.",
     link: "https://www.youtube.com/watch?v=53QXRJyFz-s",
-    image: "https://www.ricekids.org/wp-content/uploads/2025/09/maxresdefault-1024x576.jpg",
+    image: "/images/maxresdefault-1024x576.jpg",
   },
   {
     title: "Rice Kids Expands Education and Nutrition Support in India",
     excerpt: "Rice Kids, a youth-led nonprofit founded by 16-year-old changemaker Anakh Sawhney, expands its reach.",
     link: "https://thecsruniverse.com/articles/rice-kids-expands-education-and-nutrition-support-in-india",
-    image: "https://www.ricekids.org/wp-content/uploads/2025/09/IMG_9989-1-1024x683.jpg",
+    image: "/images/IMG_9989-1-1024x683.jpg",
   },
   {
     title: "Meet The Bernardsville Teen Tackling Poverty Since Age 9",
     excerpt: "In a world where millions still sleep hungry, Rice Kids is proving that compassion can cross continents and scale impact.",
-    link: "https://www.ricekids.org/wp-content/uploads/2025/10/Meet-The-Bernardsville-Teen-Tackling-Poverty-Since-Age-9.pdf",
-    image: "https://www.ricekids.org/wp-content/uploads/2026/01/Rice-Kids-Classroom-1024x693.jpg",
+    link: "/docs/Meet-The-Bernardsville-Teen-Tackling-Poverty-Since-Age-9.pdf",
+    image: "/images/Rice-Kids-Classroom-1024x693.jpg",
   },
   {
     title: "Teen founder Anakh Sawhney tackles 'opportunity poverty' through integrated nutrition–education model",
     excerpt: "Anakh Sawhney, the 16-year-old Founder & CEO of Rice Kids, is redefining how interconnected challenges of hunger, education inequality are addressed.",
     link: "https://etedge-insights.com/resources/brands-speak/teen-founder-anakh-sawhney-tackles-opportunity-poverty-through-integrated-nutrition-education-model/",
-    image: "https://www.ricekids.org/wp-content/uploads/2026/01/Rice-Kids-Volunteers-1024x688.jpg",
+    image: "/images/Rice-Kids-Volunteers-1024x688.jpg",
   },
   {
     title: "Anakh Sawhney becomes youngest NJBiz 40 Under 40 honoree",
     excerpt: "Sixteen-year-old Indian-American student and nonprofit leader Anakh Sawhney made history.",
     link: "https://www.newindiaabroad.com/english/people/anakh-sawhney-becomes-youngest-njbiz-40-under-40-honoree",
-    image: "https://www.ricekids.org/wp-content/uploads/2025/11/Anakh-Sawhney-NJBiz-Forty-Under-40-Award1-1024x750.jpg",
+    image: "/images/Anakh-Sawhney-NJBiz-Forty-Under-40-Award1-1024x750.jpg",
   },
 ];
 

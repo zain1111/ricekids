@@ -15,7 +15,7 @@ type Slide = {
 const slides: Slide[] = [
   {
     image:
-      "https://www.ricekids.org/wp-content/uploads/2025/09/IMG_0005-bg-scaled.jpg",
+      "/images/IMG_0005-bg-scaled.jpg",
     eyebrow: "Creating Pathways from Poverty to Prosperity",
     title: (
       <>
@@ -32,9 +32,9 @@ const slides: Slide[] = [
   },
   {
     image:
-      "https://www.ricekids.org/wp-content/uploads/2025/11/Featured-on-2.png",
+      "/images/Featured-on-2.png",
     eyebrow: "FEATURED ON",
-    logo: "https://www.ricekids.org/wp-content/uploads/2025/11/NIA-Logo-3.webp",
+    logo: "/images/NIA-Logo-3.webp",
     title: (
       <>
         Anakh Sawhney becomes youngest
@@ -50,7 +50,7 @@ const slides: Slide[] = [
   },
   {
     image:
-      "https://www.ricekids.org/wp-content/uploads/2025/09/maxresdefault.jpg",
+      "/images/maxresdefault.jpg",
     title: <>Watch our story</>,
     subtitle: "Over half a million lives touched through education & nutrition",
     cta: {
@@ -61,9 +61,9 @@ const slides: Slide[] = [
   },
   {
     image:
-      "https://www.ricekids.org/wp-content/uploads/2025/11/Featured-on-3.png",
+      "/images/Featured-on-3.png",
     eyebrow: "FEATURED ON",
-    logo: "https://www.ricekids.org/wp-content/uploads/2025/11/etedge-insights-logon2-181x61-1.png",
+    logo: "/images/etedge-insights-logon2-181x61-1.png",
     title: (
       <>
         Teen founder Anakh Sawhney tackles
@@ -81,9 +81,9 @@ const slides: Slide[] = [
   },
   {
     image:
-      "https://www.ricekids.org/wp-content/uploads/2025/10/Featured-on-1-1.png",
+      "/images/Featured-on-1-1.png",
     eyebrow: "FEATURED ON",
-    logo: "https://www.ricekids.org/wp-content/uploads/2025/10/bw-disrupt-logo-2.webp",
+    logo: "/images/bw-disrupt-logo-2.webp",
     title: (
       <>
         Rice Kids Expands Education
@@ -99,7 +99,7 @@ const slides: Slide[] = [
   },
   {
     image:
-      "https://www.ricekids.org/wp-content/uploads/2026/01/Featured-on.png",
+      "/images/Featured-on.png",
     eyebrow: "FEATURED ON",
     title: (
       <>
@@ -110,7 +110,7 @@ const slides: Slide[] = [
     ),
     cta: {
       label: "Read Full Story",
-      href: "https://www.ricekids.org/wp-content/uploads/2025/10/Meet-The-Bernardsville-Teen-Tackling-Poverty-Since-Age-9.pdf",
+      href: "/docs/Meet-The-Bernardsville-Teen-Tackling-Poverty-Since-Age-9.pdf",
     },
     align: "left",
   },

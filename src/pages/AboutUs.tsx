@@ -9,7 +9,7 @@ import missionImg from "@/assets/mission-img.jpg";
 import educationImg from "@/assets/education-img.jpg";
 import heroBg from "@/assets/hero-bg.jpg";
 
-const founderImage = "https://www.ricekids.org/wp-content/uploads/2025/10/IMG_0054-scaled-500x700.jpg";
+const founderImage = "/images/IMG_0054-scaled-500x700.jpg";
 
 const AboutUs = () => {
   const storyRef = useRef(null);
