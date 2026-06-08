@@ -11,6 +11,7 @@ type Slide = {
   subtitle?: React.ReactNode;
   cta?: { label: string; href: string };
   align?: "center" | "left";
+  overlay?: boolean;
 };
 
 const slides: Slide[] = [
@@ -54,6 +55,7 @@ const slides: Slide[] = [
       "/images/maxresdefault.jpg",
     title: <>Watch our story</>,
     subtitle: "Over half a million lives touched through education & nutrition",
+    overlay: true,
     cta: {
       label: "Watch Video",
       href: "https://www.youtube.com/watch?v=53QXRJyFz-s",
@@ -175,7 +177,9 @@ const HeroSection = () => {
             alt=""
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-hero" />
+          {slide.overlay && (
+            <div className="absolute inset-0 bg-gradient-hero" />
+          )}
         </motion.div>
       </AnimatePresence>
 
