@@ -1,6 +1,13 @@
 import logo from "@/assets/ricekids-logo.png";
-import { Heart } from "lucide-react";
+import { Facebook, Heart, Instagram, Linkedin, Twitter } from "lucide-react";
 import { Link } from "react-router-dom";
+
+const socialLinks = [
+  { label: "Facebook", href: "https://www.facebook.com/teamricekids", icon: Facebook },
+  { label: "LinkedIn", href: "https://www.linkedin.com/company/ricekids/", icon: Linkedin },
+  { label: "Twitter", href: "https://twitter.com/teamricekids", icon: Twitter },
+  { label: "Instagram", href: "https://www.instagram.com/teamricekids/", icon: Instagram },
+];
 
 const footerLinks = [
   { label: "Home", to: "/" },
@@ -42,23 +49,38 @@ const Footer = () => {
             </div>
           </div>
           <div>
-            <h4 className="font-display text-lg font-bold text-background mb-4">Contact</h4>
-            <p className="font-body text-sm text-background/60 mb-2">
-              Rice Kids is tax-exempt under the IRS 501(c)(3) classification.
+            <h4 className="font-display text-lg font-bold text-background mb-4">Get In Touch</h4>
+            <p className="font-body text-sm text-background/60 mb-2 leading-relaxed">
+              <span className="text-background/80">Address:</span> 2 Manor Hill Dr Bernardsville NJ 07924
             </p>
-            <a
-              href="https://www.ricekids.org"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-body text-sm text-primary hover:underline"
-            >
-              www.ricekids.org
-            </a>
+            <p className="font-body text-sm text-background/60 mb-4 leading-relaxed">
+              <span className="text-background/80">Email:</span>{" "}
+              <a
+                href="mailto:teamricekids@gmail.com"
+                className="text-primary no-underline hover:underline"
+              >
+                teamricekids(at)gmail.com
+              </a>
+            </p>
+            <div className="flex items-center gap-3">
+              {socialLinks.map(({ label, href, icon: Icon }) => (
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={label}
+                  className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center text-background/70 hover:text-primary hover:bg-background/20 transition-colors"
+                >
+                  <Icon className="w-4 h-4" />
+                </a>
+              ))}
+            </div>
           </div>
         </div>
-        <div className="border-t border-background/10 pt-8 text-center">
-          <p className="font-body text-xs text-background/40 flex items-center justify-center gap-1">
-            Made with <Heart className="w-3 h-3 text-primary" /> for Rice Kids
+        <div className="border-t border-background/10 pt-4 text-center">
+          <p className="font-body text-[11px] text-background/40 flex items-center justify-center gap-1 leading-none">
+            Made with <Heart className="w-2.5 h-2.5 text-primary" /> for Rice Kids
           </p>
         </div>
       </div>

@@ -7,6 +7,7 @@ type Slide = {
   eyebrow?: string;
   logo?: string;
   title: React.ReactNode;
+  titleClassName?: string;
   subtitle?: React.ReactNode;
   cta?: { label: string; href: string };
   align?: "center" | "left";
@@ -73,6 +74,7 @@ const slides: Slide[] = [
         nutrition–education model
       </>
     ),
+    titleClassName: "text-xl sm:text-2xl md:text-3xl lg:text-4xl",
     cta: {
       label: "Read Full Story",
       href: "https://etedge-insights.com/resources/brands-speak/teen-founder-anakh-sawhney-tackles-opportunity-poverty-through-integrated-nutrition-education-model/",
@@ -83,7 +85,7 @@ const slides: Slide[] = [
     image:
       "/images/Featured-on-1-1.png",
     eyebrow: "FEATURED ON",
-    logo: "/images/bw-disrupt-logo-2.webp",
+    logo: "/images/the-csr-universe-logo.png",
     title: (
       <>
         Rice Kids Expands Education
@@ -101,6 +103,7 @@ const slides: Slide[] = [
     image:
       "/images/Featured-on.png",
     eyebrow: "FEATURED ON",
+    logo: "/images/my-central-jersey-logo.png",
     title: (
       <>
         Meet The Bernardsville Teen
@@ -111,6 +114,24 @@ const slides: Slide[] = [
     cta: {
       label: "Read Full Story",
       href: "/docs/Meet-The-Bernardsville-Teen-Tackling-Poverty-Since-Age-9.pdf",
+    },
+    align: "left",
+  },
+  {
+    image: "/images/rice-kids-sunaayy-partnership.jpg",
+    eyebrow: "FEATURED ON",
+    logo: "/images/new-india-abroad-logo.png",
+    title: (
+      <>
+        Rice Kids, Sunaayy Foundation partner
+        <br />
+        to boost education in India
+      </>
+    ),
+    titleClassName: "text-xl sm:text-2xl md:text-3xl lg:text-4xl",
+    cta: {
+      label: "Read Full Story",
+      href: "https://www.newindiaabroad.com/english/news/rice-kids-sunaayy-foundation-partner-to-boost-education-in-india",
     },
     align: "left",
   },
@@ -187,7 +208,12 @@ const HeroSection = () => {
                 } bg-white/90 rounded px-3 py-2`}
               />
             )}
-            <h1 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground leading-tight mb-5">
+            <h1
+              className={`font-display font-bold text-primary-foreground leading-tight mb-5 ${
+                slide.titleClassName ??
+                "text-2xl sm:text-3xl md:text-4xl lg:text-5xl"
+              }`}
+            >
               {slide.title}
             </h1>
             {slide.subtitle && (

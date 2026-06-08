@@ -4,8 +4,9 @@ import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import PageHeader from "@/components/PageHeader";
-import missionImg from "@/assets/mission-img.jpg";
 import { allProjects } from "@/data/projects";
+
+const projectsHeaderBg = "/images/projects-header.jpg";
 
 const ITEMS_PER_PAGE = 12;
 
@@ -22,7 +23,7 @@ const Projects = () => {
       <PageHeader
         title="Projects"
         breadcrumb="Projects"
-        backgroundImage={missionImg}
+        backgroundImage={projectsHeaderBg}
       />
 
       {/* Summary */}
@@ -52,7 +53,7 @@ const Projects = () => {
                   transition={{ delay: Math.min(i * 0.05, 0.6) }}
                   className="group bg-card rounded-2xl overflow-hidden shadow-card hover:shadow-elevated transition-shadow duration-500 h-full"
                 >
-                  <div className="relative h-52 overflow-hidden">
+                  <div className="relative h-56 md:h-60 overflow-hidden">
                     <img
                       src={project.image}
                       alt={project.title}

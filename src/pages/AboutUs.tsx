@@ -1,15 +1,14 @@
 import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
-import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { MapPin, Send } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import PageHeader from "@/components/PageHeader";
 import visionImg from "@/assets/vision-img.jpg";
 import missionImg from "@/assets/mission-img.jpg";
 import educationImg from "@/assets/education-img.jpg";
-import heroBg from "@/assets/hero-bg.jpg";
-
 const founderImage = "/images/IMG_0054-scaled-500x700.jpg";
+const aboutHeaderBg = "/images/about-us-header.jpg";
 
 const AboutUs = () => {
   const storyRef = useRef(null);
@@ -25,7 +24,7 @@ const AboutUs = () => {
       <PageHeader
         title="About Us"
         breadcrumb="About Us"
-        backgroundImage={heroBg}
+        backgroundImage={aboutHeaderBg}
       />
 
       {/* How We Started */}
@@ -81,12 +80,14 @@ const AboutUs = () => {
             {[
               {
                 title: "Vision",
-                description: "Every person lives with dignity and equal opportunity.",
+                description:
+                  "Education transforms lives and communities, creating sustainable pathways to economic independence. Education doesn't just change individual futures, it breaks generational cycles and builds a stronger, more equitable society.",
                 image: visionImg,
               },
               {
                 title: "Mission",
-                description: "Empower marginalized communities to break cycles of poverty by providing comprehensive nutrition, education, and health support that create sustainable pathways to economic independence.",
+                description:
+                  "Empower marginalized communities to break the cycle of poverty by providing holistic support - education, nutrition, health, and family support - and empowering communities to scale and expand impact.",
                 image: missionImg,
               },
               {
@@ -201,8 +202,9 @@ const AboutUs = () => {
                   const formData = new FormData(form);
                   const name = formData.get("name");
                   const email = formData.get("email");
+                  const phone = formData.get("phone");
                   const message = formData.get("message");
-                  window.location.href = `mailto:contact@ricekids.org?subject=Message from ${name}&body=${message}%0A%0AFrom: ${name} (${email})`;
+                  window.location.href = `mailto:teamricekids@gmail.com?subject=Message from ${name}&body=${message}%0A%0AFrom: ${name}%0AEmail: ${email}%0APhone: ${phone}`;
                 }}
                 className="space-y-5"
               >
@@ -227,6 +229,15 @@ const AboutUs = () => {
                   />
                 </div>
                 <div>
+                  <label className="block font-body text-sm font-semibold text-foreground mb-1.5">Phone</label>
+                  <input
+                    type="tel"
+                    name="phone"
+                    placeholder="Your phone number"
+                    className="w-full px-4 py-3 rounded-xl border border-border bg-background text-foreground font-body text-sm focus:outline-none focus:ring-2 focus:ring-primary/40 transition"
+                  />
+                </div>
+                <div>
                   <label className="block font-body text-sm font-semibold text-foreground mb-1.5">Message</label>
                   <textarea
                     name="message"
@@ -244,14 +255,10 @@ const AboutUs = () => {
                 </button>
               </form>
 
-              <div className="mt-8 pt-6 border-t border-border space-y-3">
-                <div className="flex items-center gap-3 font-body text-sm text-muted-foreground">
-                  <Mail className="w-4 h-4 text-primary" />
-                  <a href="mailto:contact@ricekids.org" className="hover:text-foreground transition-colors">contact@ricekids.org</a>
-                </div>
-                <div className="flex items-center gap-3 font-body text-sm text-muted-foreground">
-                  <MapPin className="w-4 h-4 text-primary" />
-                  <span>Bernardsville, New Jersey, USA</span>
+              <div className="mt-8 pt-6 border-t border-border">
+                <div className="flex items-start gap-3 font-body text-sm text-muted-foreground">
+                  <MapPin className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                  <span>2 Manor Hill Dr, Bernardsville, NJ 07924, USA</span>
                 </div>
               </div>
             </div>
@@ -260,7 +267,7 @@ const AboutUs = () => {
             <div className="rounded-2xl overflow-hidden shadow-card min-h-[400px]">
               <iframe
                 title="Rice Kids Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24196.99663745!2d-74.59!3d40.72!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3a3e3a7b3f3b7%3A0x1c2e3f4a5b6c7d8e!2sBernardsville%2C%20NJ!5e0!3m2!1sen!2sus!4v1700000000000"
+                src="https://maps.google.com/maps?q=2+Manor+Hill+Dr,+Bernardsville,+NJ+07924,+USA&hl=en&z=15&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0, minHeight: "400px" }}

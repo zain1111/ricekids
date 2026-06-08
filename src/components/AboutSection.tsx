@@ -4,13 +4,14 @@ import { useRef } from "react";
 const cards = [
   {
     title: "Vision",
-    description: "Every person lives with dignity and equal opportunity.",
+    description:
+      "Education transforms lives and communities, creating sustainable pathways to economic independence. Education doesn't just change individual futures, it breaks generational cycles and builds a stronger, more equitable society.",
     image: "/images/IMG_9999-scaled.jpg",
   },
   {
     title: "Mission",
     description:
-      "Empower marginalized communities to break cycles of poverty by providing comprehensive nutrition, education, and health support that create sustainable pathways to economic independence.",
+      "Empower marginalized communities to break the cycle of poverty by providing holistic support - education, nutrition, health, and family support - and empowering communities to scale and expand impact.",
     image: "/images/Newark-School-scaled.jpg",
   },
   {
@@ -35,11 +36,11 @@ const AboutSection = () => {
             transition={{ duration: 0.6 }}
           >
             <p className="font-body text-sm uppercase tracking-[0.25em] text-primary font-semibold mb-3">About Rice Kids</p>
-            <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground mb-6">
-              Over half a million lives touched
+            <h2 className="font-display text-2xl md:text-3xl lg:text-4xl font-bold text-foreground leading-snug mb-6">
+              Over half a million lives touched with an innovative model helping break the cycle of poverty.
             </h2>
             <p className="font-body text-lg text-muted-foreground leading-relaxed">
-              with an innovative model helping break the cycle of poverty. The unique approach relies on providing holistic support that removes all barriers so kids can remain in school and empowers the women in communities to drive scalable change. Established in 2018 to provide hot and nutritious meals, Anakh realized that simply feeding is not the solution and pivoted to focus on education for sustainable change. Working directly with children and youth, as well as through partnerships, we are helping kids remain in or return to mainstream education.
+              The unique approach relies on providing holistic support that removes all barriers so kids can remain in school and empowers the women in communities to drive scalable change. Established in 2018 to provide hot and nutritious meals, Anakh realized that simply feeding is not the solution and pivoted to focus on education for sustainable change. Working directly with children and youth, as well as through partnerships, we are helping kids remain in or return to mainstream education.
             </p>
           </motion.div>
 

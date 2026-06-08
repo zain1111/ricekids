@@ -25,7 +25,7 @@ const DonateSection = () => {
           transition={{ delay: 0.1 }}
           className="font-display text-3xl md:text-5xl font-bold text-primary-foreground mb-4"
         >
-          Donate
+          Stand with the needy
         </motion.h2>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -33,7 +33,7 @@ const DonateSection = () => {
           transition={{ delay: 0.2 }}
           className="font-body text-primary-foreground/80 text-lg mb-10 max-w-2xl mx-auto"
         >
-          Join thousands of donors who have helped Rice Kids serve the needy. No donation is too small. Please click on the link below to make your tax-exempt donation to us.
+          Creating pathways from poverty to prosperity through comprehensive support that creates equal educational opportunities
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 20 }}

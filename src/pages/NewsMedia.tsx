@@ -7,6 +7,19 @@ import PageHeader from "@/components/PageHeader";
 
 const allNews = [
   {
+    title: "Every Child Deserves More Than an Impossible Choice",
+    excerpt:
+      "Founder & CEO of Rice Kids, Anakh Sawhney argues education and community leadership break cycles of poverty",
+    link: "https://www.newindiaabroad.com/english/opinion/every-child-deserves-more-than-an-impossible-choice",
+    image: "/images/every-child-deserves-more.jpg",
+  },
+  {
+    title: "Anakh Sawhney named Top 100 Indian Americans Who Made Transformational Impact in 2025",
+    excerpt: "Anakh Sawhney named Top 100 Indian Americans Who Made Transformational Impact in 2025",
+    link: "https://www.newindiaabroad.com/english/newspaper/-india-abroad-impact-100",
+    image: "/images/india-abroad-impact-100.png",
+  },
+  {
     title: "Teen founder Anakh Sawhney tackles 'opportunity poverty' through integrated nutrition–education model",
     excerpt: "Anakh Sawhney, the 16-year-old Founder & CEO of Rice Kids, is redefining how interconnected challenges of hunger, education inequality are addressed.",
     link: "https://etedge-insights.com/resources/brands-speak/teen-founder-anakh-sawhney-tackles-opportunity-poverty-through-integrated-nutrition-education-model/",
