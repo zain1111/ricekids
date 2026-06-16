@@ -4,7 +4,8 @@ import { Heart } from "lucide-react";
 import { Link } from "react-router-dom";
 import { allProjects } from "@/data/projects";
 
-const latestProject = allProjects[0];
+const latestProject =
+  allProjects.find((p) => p.slug === "digital-tech-to-advance-learning") ?? allProjects[0];
 
 const DonateSection = () => {
   const ref = useRef(null);

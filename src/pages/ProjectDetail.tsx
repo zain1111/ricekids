@@ -158,19 +158,24 @@ const ProjectDetail = () => {
             </a>
           </motion.div>
 
-          {/* Project Image */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.7 }}
-            className="rounded-2xl overflow-hidden shadow-elevated"
-          >
-            <img
-              src={project.image}
-              alt={project.title}
-              className="w-full h-auto"
-            />
-          </motion.div>
+          {/* Project Images */}
+          <div className="space-y-6">
+            {(project.images ?? [project.image]).map((src, i) => (
+              <motion.div
+                key={src}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.7 + i * 0.1 }}
+                className="rounded-2xl overflow-hidden shadow-elevated"
+              >
+                <img
+                  src={src}
+                  alt={`${project.title}${i > 0 ? ` ${i + 1}` : ""}`}
+                  className="w-full h-auto"
+                />
+              </motion.div>
+            ))}
+          </div>
         </div>
       </section>
 

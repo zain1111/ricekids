@@ -6,10 +6,27 @@ export interface Project {
   goal: number;
   donors: number;
   image: string;
+  images?: string[];
   description: string;
 }
 
 export const allProjects: Project[] = [
+  {
+    slug: "advancing-learning-with-essential-resources",
+    title: "Advancing Learning With Essential Resources",
+    period: "Jun – Aug 2026",
+    raised: 2200,
+    goal: 12500,
+    donors: 48,
+    image: "/images/advancing-learning-essential-resources-1.jpg",
+    images: [
+      "/images/advancing-learning-essential-resources-1.jpg",
+      "/images/advancing-learning-essential-resources-2.jpg",
+      "/images/advancing-learning-essential-resources-3.jpg",
+    ],
+    description:
+      "We continue to drive our mission forward to provide educational and essential resources to students in schools in poor neighborhoods across the Northeast. These schools have limited funding and aren't able to provide essential resources that kids' families cannot afford. This leads teachers to pitch in with their personal funds, which are not enough to provide a holistic learning environment. The smiles say it all!",
+  },
   {
     slug: "digital-tech-to-advance-learning",
     title: "Digital Tech To Advance Learning",
