@@ -1,6 +1,9 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
+const DONATE_URL =
+  "https://www.paypal.com/donate/?hosted_button_id=DH3NT9K8M2JG6";
+
 const stats = [
   { number: "285M", text: "children denied education globally" },
   { number: "828M", text: "people facing hunger daily" },
@@ -13,7 +16,7 @@ const CrisisSection = () => {
 
   return (
     <section className="py-24 bg-background">
-      <div className="max-w-5xl mx-auto px-6 text-center" ref={ref}>
+      <div className="max-w-6xl mx-auto px-6 text-center" ref={ref}>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -50,18 +53,28 @@ const CrisisSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.35 }}
-          className="bg-card rounded-2xl p-6 md:p-8 shadow-card max-w-4xl mx-auto flex flex-col sm:flex-row gap-6 items-center sm:items-start text-left"
+          className="bg-card rounded-2xl p-6 md:p-10 shadow-card max-w-5xl mx-auto flex flex-col md:flex-row gap-8 md:gap-10 items-center md:items-start text-left"
         >
-          <div className="flex-shrink-0 w-28 h-28 sm:w-32 sm:h-32 rounded-xl overflow-hidden shadow-sm ring-1 ring-border/50">
+          <div className="flex-shrink-0 w-44 h-44 sm:w-52 sm:h-52 md:w-64 md:h-64 rounded-2xl overflow-hidden shadow-card ring-1 ring-border/50">
             <img
               src="/images/crisis-child-portrait.png"
               alt="Child affected by poverty and lack of access to education"
               className="w-full h-full object-cover object-center"
             />
           </div>
-          <p className="font-body text-muted-foreground leading-relaxed text-sm md:text-base">
-            With 285 million children denied education globally and 828 million people facing hunger daily, the intersection of educational barriers and malnutrition traps entire generations in poverty, preventing 617 million young people from acquiring even basic literacy and math skills. Not surprisingly, almost all these kids are from minority communities, systemically discriminated against because of their race, caste, gender, or economic status.
-          </p>
+          <div className="flex flex-col items-start">
+            <p className="font-body text-muted-foreground leading-relaxed text-base md:text-lg mb-6">
+              With 285 million children denied education globally and 828 million people facing hunger daily, the intersection of educational barriers and malnutrition traps entire generations in poverty, preventing 617 million young people from acquiring even basic literacy and math skills. Not surprisingly, almost all these kids are from minority communities, systemically discriminated against because of their race, caste, gender, or economic status.
+            </p>
+            <a
+              href={DONATE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-gradient-warm text-primary-foreground px-8 py-3 rounded-full font-body font-bold text-base hover:opacity-90 transition-opacity shadow-elevated"
+            >
+              Donate Now
+            </a>
+          </div>
         </motion.div>
       </div>
     </section>

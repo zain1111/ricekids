@@ -26,18 +26,6 @@ const Projects = () => {
         backgroundImage={projectsHeaderBg}
       />
 
-      {/* Summary */}
-      <section className="py-16 bg-gradient-warm">
-        <div className="max-w-5xl mx-auto px-6 text-center">
-          <h2 className="font-display text-2xl md:text-3xl font-bold text-primary-foreground mb-2">
-            {allProjects.length} Projects &amp; Counting
-          </h2>
-          <p className="font-body text-primary-foreground/80">
-            From feeding the homeless in New York to establishing education centers in India — every project creates lasting change.
-          </p>
-        </div>
-      </section>
-
       {/* Projects Grid */}
       <section className="py-24 bg-background" ref={ref}>
         <div className="max-w-7xl mx-auto px-6">

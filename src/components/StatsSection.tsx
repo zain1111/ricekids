@@ -22,17 +22,9 @@ const StatsSection = () => {
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
-          className="text-center font-display text-2xl md:text-3xl font-bold text-primary-foreground mb-4"
+          className="text-center font-display text-2xl md:text-3xl font-bold text-primary-foreground mb-16"
         >
           Our Projects Are Powered By Grassroots Supporters Like You
-        </motion.p>
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={inView ? { opacity: 1 } : {}}
-          transition={{ delay: 0.2 }}
-          className="text-center font-body text-primary-foreground/80 text-sm mb-16 max-w-xl mx-auto"
-        >
-          Rice Kids is tax-exempt under the IRS 501(c)(3) classification. All donations are tax-exempt.
         </motion.p>
 
         <div className="grid md:grid-cols-3 gap-12">

@@ -4,17 +4,16 @@ import { ExternalLink } from "lucide-react";
 
 const newsItems = [
   {
-    title: "Every Child Deserves More Than an Impossible Choice",
-    excerpt:
-      "Founder & CEO of Rice Kids, Anakh Sawhney argues education and community leadership break cycles of poverty",
-    link: "https://www.newindiaabroad.com/english/opinion/every-child-deserves-more-than-an-impossible-choice",
-    image: "/images/every-child-deserves-more.jpg",
+    title: "Teen founder Anakh Sawhney tackles 'opportunity poverty' through integrated nutrition–education model",
+    excerpt: "Anakh Sawhney, the 16-year-old Founder & CEO of Rice Kids, is redefining how interconnected challenges of hunger, education inequality are addressed.",
+    link: "https://etedge-insights.com/resources/brands-speak/teen-founder-anakh-sawhney-tackles-opportunity-poverty-through-integrated-nutrition-education-model/",
+    image: "/images/Rice-Kids-Volunteers-1024x688.jpg",
   },
   {
-    title: "Anakh Sawhney named Top 100 Indian Americans Who Made Transformational Impact in 2025",
-    excerpt: "Anakh Sawhney named Top 100 Indian Americans Who Made Transformational Impact in 2025",
-    link: "https://www.newindiaabroad.com/english/newspaper/-india-abroad-impact-100",
-    image: "/images/india-abroad-impact-100.png",
+    title: "Anakh Sawhney becomes youngest NJBiz 40 Under 40 honoree",
+    excerpt: "Sixteen-year-old Indian-American student and nonprofit leader Anakh Sawhney made history.",
+    link: "https://www.newindiaabroad.com/english/people/anakh-sawhney-becomes-youngest-njbiz-40-under-40-honoree",
+    image: "/images/Anakh-Sawhney-NJBiz-Forty-Under-40-Award1-1024x750.jpg",
   },
   {
     title: "Breaking Age Barriers in Leadership, with 16-year old Anakh Sawhney",
@@ -29,22 +28,16 @@ const newsItems = [
     image: "/images/IMG_9989-1-1024x683.jpg",
   },
   {
+    title: "Anakh Sawhney named Top 100 Indian Americans Who Made Transformational Impact in 2025",
+    excerpt: "Anakh Sawhney named Top 100 Indian Americans Who Made Transformational Impact in 2025",
+    link: "https://www.newindiaabroad.com/english/newspaper/-india-abroad-impact-100",
+    image: "/images/india-abroad-impact-100.png",
+  },
+  {
     title: "Meet The Bernardsville Teen Tackling Poverty Since Age 9",
     excerpt: "In a world where millions still sleep hungry, Rice Kids is proving that compassion can cross continents and scale impact.",
     link: "/docs/Meet-The-Bernardsville-Teen-Tackling-Poverty-Since-Age-9.pdf",
     image: "/images/Rice-Kids-Classroom-1024x693.jpg",
-  },
-  {
-    title: "Teen founder Anakh Sawhney tackles 'opportunity poverty' through integrated nutrition–education model",
-    excerpt: "Anakh Sawhney, the 16-year-old Founder & CEO of Rice Kids, is redefining how interconnected challenges of hunger, education inequality are addressed.",
-    link: "https://etedge-insights.com/resources/brands-speak/teen-founder-anakh-sawhney-tackles-opportunity-poverty-through-integrated-nutrition-education-model/",
-    image: "/images/Rice-Kids-Volunteers-1024x688.jpg",
-  },
-  {
-    title: "Anakh Sawhney becomes youngest NJBiz 40 Under 40 honoree",
-    excerpt: "Sixteen-year-old Indian-American student and nonprofit leader Anakh Sawhney made history.",
-    link: "https://www.newindiaabroad.com/english/people/anakh-sawhney-becomes-youngest-njbiz-40-under-40-honoree",
-    image: "/images/Anakh-Sawhney-NJBiz-Forty-Under-40-Award1-1024x750.jpg",
   },
 ];
 

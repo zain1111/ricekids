@@ -5,6 +5,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { allProjects } from "@/data/projects";
 
+const projectDetailHeaderBg = "/images/IMG_9999-scaled.jpg";
+
 const ProjectDetail = () => {
   const { slug } = useParams<{ slug: string }>();
   const project = allProjects.find((p) => p.slug === slug);
@@ -33,9 +35,13 @@ const ProjectDetail = () => {
       <Navbar />
 
       {/* Hero */}
-      <section className="relative h-[45vh] min-h-[320px] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[60vh] min-h-[440px] md:min-h-[520px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
-          <img src={project.image} alt={project.title} className="w-full h-full object-cover" />
+          <img
+            src={projectDetailHeaderBg}
+            alt={project.title}
+            className="w-full h-full object-cover object-center scale-110 translate-y-8"
+          />
           <div className="absolute inset-0 bg-gradient-hero" />
         </div>
         <div className="relative z-10 text-center pt-20 px-6">
@@ -143,7 +149,7 @@ const ProjectDetail = () => {
             className="text-center mb-8"
           >
             <a
-              href="https://www.paypal.com/donate/?hosted_button_id=KGMBBFUNQZQBC"
+              href="https://www.paypal.com/donate/?hosted_button_id=DH3NT9K8M2JG6"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-gradient-warm text-primary-foreground px-10 py-4 rounded-full font-body font-bold text-lg hover:opacity-90 transition-opacity shadow-elevated"
@@ -152,7 +158,7 @@ const ProjectDetail = () => {
             </a>
           </motion.div>
 
-          {/* Gallery Image */}
+          {/* Project Image */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -162,7 +168,7 @@ const ProjectDetail = () => {
             <img
               src={project.image}
               alt={project.title}
-              className="w-full h-auto object-cover max-h-[500px]"
+              className="w-full h-auto"
             />
           </motion.div>
         </div>

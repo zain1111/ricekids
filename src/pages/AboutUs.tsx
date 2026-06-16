@@ -1,12 +1,12 @@
 import { motion, useInView } from "framer-motion";
-import { useRef, useState } from "react";
+import { useRef, useState, type FormEvent } from "react";
 import { MapPin, Send } from "lucide-react";
+import { toast } from "sonner";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import PageHeader from "@/components/PageHeader";
-import visionImg from "@/assets/vision-img.jpg";
-import missionImg from "@/assets/mission-img.jpg";
-import educationImg from "@/assets/education-img.jpg";
+
+const CONTACT_EMAIL = "teamricekids@gmail.com";
 const founderImage = "/images/IMG_0054-scaled-500x700.jpg";
 const aboutHeaderBg = "/images/about-us-header.jpg";
 
@@ -17,6 +17,49 @@ const AboutUs = () => {
   const cardsInView = useInView(cardsRef, { once: true, margin: "-80px" });
   const valuesRef = useRef(null);
   const valuesInView = useInView(valuesRef, { once: true, margin: "-80px" });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleContactSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+    const name = String(formData.get("name") ?? "").trim();
+    const email = String(formData.get("email") ?? "").trim();
+    const phone = String(formData.get("phone") ?? "").trim();
+    const message = String(formData.get("message") ?? "").trim();
+
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch(`https://formsubmit.co/ajax/${CONTACT_EMAIL}`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          phone: phone || "Not provided",
+          message,
+          _subject: `Rice Kids contact form: ${name}`,
+          _replyto: email,
+          _template: "table",
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Submission failed");
+      }
+
+      toast.success("Message sent! We'll get back to you soon.");
+      form.reset();
+    } catch {
+      toast.error("Unable to send your message. Please email us directly at teamricekids@gmail.com.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <div className="min-h-screen">
@@ -56,7 +99,7 @@ const AboutUs = () => {
               <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-6">How We Started</h2>
               <div className="space-y-4 font-body text-muted-foreground leading-relaxed">
                 <p>
-                  Rice Kids is an initiative run by the Pranakh Foundation, founded by Anakh Sawhney when she was just 9 years old. The organization was born from a powerful realization: children facing poverty don't just need meals, they need pathways to education and opportunity.
+                  Rice Kids was founded by Anakh Sawhney when she was just 9 years old. The organization was born from a powerful realization: children facing poverty don't just need meals, they need pathways to education and opportunity.
                 </p>
                 <p>
                   Inspired by Sikhism's core principles of equality and selfless service, "Vand Chakhna" (to share what one has with others), Anakh began by mobilizing her family, friends, and neighbors to participate in local community service. But she quickly recognized a critical gap: most efforts provided temporary relief without addressing why children were dropping out of school or why families couldn't break cycles of poverty. In addition, almost all of these children were from minority and marginalized communities subjected to systemic discrimination.
@@ -81,19 +124,19 @@ const AboutUs = () => {
               {
                 title: "Vision",
                 description:
-                  "Education transforms lives and communities, creating sustainable pathways to economic independence. Education doesn't just change individual futures, it breaks generational cycles and builds a stronger, more equitable society.",
-                image: visionImg,
+                  "Eliminate structural poverty by 2040 via education and holistic support",
+                image: "/images/IMG_9999-scaled.jpg",
               },
               {
                 title: "Mission",
                 description:
-                  "Empower marginalized communities to break the cycle of poverty by providing holistic support - education, nutrition, health, and family support - and empowering communities to scale and expand impact.",
-                image: missionImg,
+                  "Break the cycle of poverty by providing education access and holistic support, including nutrition, health, and family resources, and empower local communities to scale and expand impact.",
+                image: "/images/Newark-School-scaled.jpg",
               },
               {
                 title: "Why Education?",
                 description: "Education transforms lives and communities, but must be combined with holistic nutrition and health support. Education doesn't just change individual futures — it breaks generational cycles and builds stronger, more equitable communities.",
-                image: educationImg,
+                image: "/images/Rice-Kids-Why-Education-1-scaled.jpg",
               },
             ].map((card, i) => (
               <motion.div
@@ -195,19 +238,8 @@ const AboutUs = () => {
           <div className="grid md:grid-cols-2 gap-10">
             {/* Contact Form */}
             <div className="bg-card rounded-2xl p-8 shadow-card">
-              <form
-                onSubmit={(e) => {
-                  e.preventDefault();
-                  const form = e.target as HTMLFormElement;
-                  const formData = new FormData(form);
-                  const name = formData.get("name");
-                  const email = formData.get("email");
-                  const phone = formData.get("phone");
-                  const message = formData.get("message");
-                  window.location.href = `mailto:teamricekids@gmail.com?subject=Message from ${name}&body=${message}%0A%0AFrom: ${name}%0AEmail: ${email}%0APhone: ${phone}`;
-                }}
-                className="space-y-5"
-              >
+              <form onSubmit={handleContactSubmit} className="space-y-5">
+                <input type="text" name="_honey" className="hidden" tabIndex={-1} autoComplete="off" />
                 <div>
                   <label className="block font-body text-sm font-semibold text-foreground mb-1.5">Name</label>
                   <input
@@ -249,9 +281,10 @@ const AboutUs = () => {
                 </div>
                 <button
                   type="submit"
-                  className="w-full flex items-center justify-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-xl font-body font-bold text-sm hover:opacity-90 transition-opacity"
+                  disabled={isSubmitting}
+                  className="w-full flex items-center justify-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-xl font-body font-bold text-sm hover:opacity-90 transition-opacity disabled:opacity-60 disabled:cursor-not-allowed"
                 >
-                  <Send className="w-4 h-4" /> Send Message
+                  <Send className="w-4 h-4" /> {isSubmitting ? "Sending..." : "Send Message"}
                 </button>
               </form>
 

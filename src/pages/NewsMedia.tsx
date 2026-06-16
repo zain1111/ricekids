@@ -1,24 +1,11 @@
 import { motion, useInView } from "framer-motion";
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import { ExternalLink } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import PageHeader from "@/components/PageHeader";
 
 const allNews = [
-  {
-    title: "Every Child Deserves More Than an Impossible Choice",
-    excerpt:
-      "Founder & CEO of Rice Kids, Anakh Sawhney argues education and community leadership break cycles of poverty",
-    link: "https://www.newindiaabroad.com/english/opinion/every-child-deserves-more-than-an-impossible-choice",
-    image: "/images/every-child-deserves-more.jpg",
-  },
-  {
-    title: "Anakh Sawhney named Top 100 Indian Americans Who Made Transformational Impact in 2025",
-    excerpt: "Anakh Sawhney named Top 100 Indian Americans Who Made Transformational Impact in 2025",
-    link: "https://www.newindiaabroad.com/english/newspaper/-india-abroad-impact-100",
-    image: "/images/india-abroad-impact-100.png",
-  },
   {
     title: "Teen founder Anakh Sawhney tackles 'opportunity poverty' through integrated nutrition–education model",
     excerpt: "Anakh Sawhney, the 16-year-old Founder & CEO of Rice Kids, is redefining how interconnected challenges of hunger, education inequality are addressed.",
@@ -38,16 +25,28 @@ const allNews = [
     image: "/images/maxresdefault.jpg",
   },
   {
-    title: "Meet Anakh Sawhney | CEO, Rice Kids",
-    excerpt: "We had the good fortune of connecting with Anakh Sawhney and we've shared our conversation below.",
-    link: "https://shoutoutmiami.com/meet-anakh-sawhney-ceo-rice-kids/",
-    image: "/images/Rice-Kids-Classroom.jpg",
-  },
-  {
     title: "Rice Kids Expands Education and Nutrition Support in India",
     excerpt: "Rice Kids, a youth-led nonprofit founded by 16-year-old changemaker Anakh Sawhney, expands its reach across India.",
     link: "https://thecsruniverse.com/articles/rice-kids-expands-education-and-nutrition-support-in-india",
     image: "/images/IMG_9989-1-scaled.jpg",
+  },
+  {
+    title: "Anakh Sawhney named Top 100 Indian Americans Who Made Transformational Impact in 2025",
+    excerpt: "Anakh Sawhney named Top 100 Indian Americans Who Made Transformational Impact in 2025",
+    link: "https://www.newindiaabroad.com/english/newspaper/-india-abroad-impact-100",
+    image: "/images/india-abroad-impact-100.png",
+  },
+  {
+    title: "Meet The Bernardsville Teen Tackling Poverty Since Age 9",
+    excerpt: "In a world where millions still sleep hungry, Rice Kids is proving that compassion can cross continents and scale impact.",
+    link: "/docs/Meet-The-Bernardsville-Teen-Tackling-Poverty-Since-Age-9.pdf",
+    image: "/images/Rice-Kids-Why-Education-1-scaled.jpg",
+  },
+  {
+    title: "Meet Anakh Sawhney | CEO, Rice Kids",
+    excerpt: "We had the good fortune of connecting with Anakh Sawhney and we've shared our conversation below.",
+    link: "https://shoutoutmiami.com/meet-anakh-sawhney-ceo-rice-kids/",
+    image: "/images/Rice-Kids-Classroom.jpg",
   },
   {
     title: "Rice Kids, Sunaayy Foundation partner to boost education in India",
@@ -60,12 +59,6 @@ const allNews = [
     excerpt: "In a world where millions still sleep hungry, Rice Kids is proving that compassion can cross continents and scale impact.",
     link: "https://theprint.in/ani-press-releases/rice-kids-grows-its-india-presence-with-a-simple-focus-meals-that-keep-kids-learning/2715273/",
     image: "/images/IMG_9999-scaled.jpg",
-  },
-  {
-    title: "Meet The Bernardsville Teen Tackling Poverty Since Age 9",
-    excerpt: "In a world where millions still sleep hungry, Rice Kids is proving that compassion can cross continents and scale impact.",
-    link: "/docs/Meet-The-Bernardsville-Teen-Tackling-Poverty-Since-Age-9.pdf",
-    image: "/images/Rice-Kids-Why-Education-1-scaled.jpg",
   },
   {
     title: "Rice Kids Grows Its India Presence with a Simple Focus - Meals That Keep Kids Learning",
@@ -116,27 +109,16 @@ const allNews = [
     image: "/images/PXL_20230304_151453597-1.jpg",
   },
   {
-    title: "Rice Kids Expands Education and Nutrition Support in India",
-    excerpt: "Rice Kids, a youth-led nonprofit, expands its reach with education and nutrition programs across India.",
-    link: "https://thecsruniverse.com/articles/rice-kids-expands-education-and-nutrition-support-in-india",
-    image: "/images/IMG_9989-1-scaled.jpg",
-  },
-  {
     title: "Rice Kids Spreads Hope and Healthy Meals",
     excerpt: "Rice Kids, a youth-led nonprofit founded by 16-year-old changemaker Anakh Sawhney, spreads hope through nutritious meals.",
     link: "/docs/Anakh-Sawhney-Rice-Kids-Mendham-Neighbors-Article.pdf",
     image: "/images/PXL_20230122_192949801.jpg",
   },
 ];
-const ITEMS_PER_PAGE = 9;
 
 const NewsMedia = () => {
-  const [visibleCount, setVisibleCount] = useState(ITEMS_PER_PAGE);
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-80px" });
-
-  const visibleNews = allNews.slice(0, visibleCount);
-  const hasMore = visibleCount < allNews.length;
 
   return (
     <div className="min-h-screen bg-background">
@@ -163,7 +145,7 @@ const NewsMedia = () => {
           </motion.div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {visibleNews.map((item, i) => (
+            {allNews.map((item, i) => (
               <motion.a
                 key={i}
                 href={item.link}
@@ -171,7 +153,7 @@ const NewsMedia = () => {
                 rel="noopener noreferrer"
                 initial={{ opacity: 0, y: 30 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
-                transition={{ delay: 0.05 + (i % ITEMS_PER_PAGE) * 0.04 }}
+                transition={{ delay: 0.05 + Math.min(i * 0.04, 0.6) }}
                 className="group bg-card rounded-2xl overflow-hidden shadow-card hover:shadow-elevated transition-all duration-500 flex flex-col"
               >
                 <div className="h-48 overflow-hidden">
@@ -195,17 +177,6 @@ const NewsMedia = () => {
               </motion.a>
             ))}
           </div>
-
-          {hasMore && (
-            <div className="text-center mt-12">
-              <button
-                onClick={() => setVisibleCount((c) => c + ITEMS_PER_PAGE)}
-                className="bg-gradient-warm text-primary-foreground px-8 py-3 rounded-full font-body font-bold text-sm tracking-wide hover:opacity-90 transition-opacity"
-              >
-                Load More Articles
-              </button>
-            </div>
-          )}
         </div>
       </section>
 

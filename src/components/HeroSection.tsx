@@ -18,17 +18,18 @@ const slides: Slide[] = [
   {
     image:
       "/images/IMG_0005-bg-scaled.jpg",
-    eyebrow: "Creating Pathways from Poverty to Prosperity",
     title: (
       <>
-        <span className="text-gradient-warm">Enabling pathways</span> from
-        poverty to prosperity
+        <span className="block">
+          <span className="text-gradient-warm">Enabling pathways</span> from poverty to prosperity via education
+        </span>
+        <span className="block">for marginalized communities</span>
       </>
     ),
-    subtitle: "via education for marginalized communities",
+    titleClassName: "text-lg sm:text-xl md:text-2xl lg:text-3xl leading-snug",
     cta: {
       label: "Donate Now",
-      href: "https://www.paypal.com/donate/?hosted_button_id=YOUR_BUTTON_ID",
+      href: "https://www.paypal.com/donate/?hosted_button_id=DH3NT9K8M2JG6",
     },
     align: "center",
   },

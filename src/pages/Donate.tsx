@@ -51,7 +51,7 @@ const Donate = () => {
             transition={{ delay: 0.3 }}
           >
             <a
-              href="https://www.paypal.com/donate/?hosted_button_id=ricekids"
+              href="https://www.paypal.com/donate/?hosted_button_id=DH3NT9K8M2JG6"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-gradient-warm text-primary-foreground px-12 py-4 rounded-full font-body font-bold text-lg hover:opacity-90 transition-opacity shadow-elevated"
@@ -70,28 +70,6 @@ const Donate = () => {
             <Shield className="w-4 h-4 text-secondary" />
             <span>Rice Kids is a registered 501(c)(3) nonprofit. All donations are tax-deductible.</span>
           </motion.div>
-        </div>
-      </section>
-
-      {/* Campaign Progress */}
-      <section className="py-24 bg-gradient-warm relative overflow-hidden">
-        <div className="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-primary-foreground/5" />
-        <div className="absolute -bottom-24 -left-24 w-72 h-72 rounded-full bg-primary-foreground/5" />
-        <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
-          <p className="font-body text-primary-foreground/70 text-sm uppercase tracking-wider mb-2">Current Campaign</p>
-          <h3 className="font-display text-2xl md:text-4xl font-bold text-primary-foreground mb-8">
-            Holistic Education Support for Kids
-          </h3>
-          <div className="max-w-md mx-auto bg-primary-foreground/10 backdrop-blur-sm rounded-2xl p-8">
-            <div className="flex justify-between font-body text-sm text-primary-foreground/80 mb-3">
-              <span>$48,000 raised</span>
-              <span>$50,000 goal</span>
-            </div>
-            <div className="w-full bg-primary-foreground/20 rounded-full h-3">
-              <div className="bg-primary-foreground h-3 rounded-full transition-all duration-1000" style={{ width: "96%" }} />
-            </div>
-            <p className="font-body text-primary-foreground/60 text-xs mt-3">96% of our goal reached</p>
-          </div>
         </div>
       </section>
 

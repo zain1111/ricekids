@@ -1,17 +1,18 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import { Shield } from "lucide-react";
 const cards = [
   {
     title: "Vision",
     description:
-      "Education transforms lives and communities, creating sustainable pathways to economic independence. Education doesn't just change individual futures, it breaks generational cycles and builds a stronger, more equitable society.",
+      "Eliminate structural poverty by 2040 via education and holistic support",
     image: "/images/IMG_9999-scaled.jpg",
   },
   {
     title: "Mission",
     description:
-      "Empower marginalized communities to break the cycle of poverty by providing holistic support - education, nutrition, health, and family support - and empowering communities to scale and expand impact.",
+      "Break the cycle of poverty by providing education access and holistic support, including nutrition, health, and family resources, and empower local communities to scale and expand impact.",
     image: "/images/Newark-School-scaled.jpg",
   },
   {
@@ -51,7 +52,7 @@ const AboutSection = () => {
             className="rounded-2xl overflow-hidden shadow-card aspect-video"
           >
             <iframe
-              src="https://www.youtube.com/embed/l1MymLtbDfU"
+              src="https://www.youtube.com/embed/vR7fLui_UIY"
               title="Anakh Sawhney: Rice Kids Creating Pathways From Poverty to Prosperity Via Education"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
@@ -60,7 +61,19 @@ const AboutSection = () => {
           </motion.div>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 mt-16">
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: 0.15 }}
+          className="mt-16 mb-8 flex items-center justify-center gap-2 font-body text-base md:text-lg text-primary text-center max-w-3xl mx-auto"
+        >
+          <Shield className="w-5 h-5 text-primary flex-shrink-0" />
+          <span>
+            Rice Kids is tax-exempt under the IRS 501(c)(3) classification. All donations are tax-exempt
+          </span>
+        </motion.p>
+
+        <div className="grid md:grid-cols-3 gap-8">
           {cards.map((card, i) => (
             <motion.div
               key={card.title}

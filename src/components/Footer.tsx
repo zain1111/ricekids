@@ -13,6 +13,7 @@ const footerLinks = [
   { label: "Home", to: "/" },
   { label: "About Us", to: "/about-us" },
   { label: "Projects", to: "/projects" },
+  { label: "News & Media", to: "/news-media" },
 ];
 
 const Footer = () => {
@@ -39,7 +40,7 @@ const Footer = () => {
                 </Link>
               ))}
               <a
-                href="https://www.ricekids.org/#!"
+                href="https://www.paypal.com/donate/?hosted_button_id=DH3NT9K8M2JG6"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-body text-sm text-background/60 hover:text-primary transition-colors"

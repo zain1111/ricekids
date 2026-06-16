@@ -1,10 +1,15 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Heart } from "lucide-react";
+import { Link } from "react-router-dom";
+import { allProjects } from "@/data/projects";
+
+const latestProject = allProjects[0];
 
 const DonateSection = () => {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-80px" });
+  const pct = Math.min(Math.round((latestProject.raised / latestProject.goal) * 100), 100);
 
   return (
     <section id="donate" className="py-24 bg-gradient-warm relative overflow-hidden">
@@ -35,41 +40,53 @@ const DonateSection = () => {
         >
           Creating pathways from poverty to prosperity through comprehensive support that creates equal educational opportunities
         </motion.p>
+
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.3 }}
-          className="flex flex-col sm:flex-row gap-4 justify-center"
+          className="bg-primary-foreground/10 backdrop-blur-sm rounded-2xl p-8"
         >
-          <a
-            href="https://www.paypal.com/donate/?hosted_button_id=ricekids"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-primary-foreground text-primary px-10 py-4 rounded-full font-body font-bold text-lg hover:opacity-90 transition-opacity shadow-elevated"
-          >
-            Donate Now
-          </a>
+          <p className="font-body text-primary-foreground/70 text-sm uppercase tracking-wider mb-2">Featured Project</p>
+          <h3 className="font-display text-2xl font-bold text-primary-foreground mb-4">
+            <Link
+              to={`/projects/${latestProject.slug}`}
+              className="hover:opacity-90 transition-opacity"
+            >
+              {latestProject.title}
+            </Link>
+          </h3>
+          <div className="max-w-md mx-auto">
+            <div className="flex justify-between font-body text-sm text-primary-foreground/80 mb-2">
+              <span>${latestProject.raised.toLocaleString()} raised</span>
+              <span>${latestProject.goal.toLocaleString()} goal</span>
+            </div>
+            <div className="w-full bg-primary-foreground/20 rounded-full h-3 mb-4">
+              <div className="bg-primary-foreground h-3 rounded-full" style={{ width: `${pct}%` }} />
+            </div>
+            <Link
+              to={`/projects/${latestProject.slug}`}
+              className="font-body text-sm font-semibold text-primary-foreground/90 hover:text-primary-foreground transition-colors underline-offset-4 hover:underline"
+            >
+              View Project
+            </Link>
+          </div>
         </motion.div>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.5 }}
-          className="mt-16 bg-primary-foreground/10 backdrop-blur-sm rounded-2xl p-8"
+          className="flex flex-col sm:flex-row gap-4 justify-center mt-10"
         >
-          <p className="font-body text-primary-foreground/70 text-sm uppercase tracking-wider mb-2">Current Campaign</p>
-          <h3 className="font-display text-2xl font-bold text-primary-foreground mb-4">
-            Holistic Education Support for Kids
-          </h3>
-          <div className="max-w-md mx-auto">
-            <div className="flex justify-between font-body text-sm text-primary-foreground/80 mb-2">
-              <span>$48,000 raised</span>
-              <span>$50,000 goal</span>
-            </div>
-            <div className="w-full bg-primary-foreground/20 rounded-full h-3">
-              <div className="bg-primary-foreground h-3 rounded-full" style={{ width: "96%" }} />
-            </div>
-          </div>
+          <a
+            href="https://www.paypal.com/donate/?hosted_button_id=DH3NT9K8M2JG6"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-primary-foreground text-primary px-10 py-4 rounded-full font-body font-bold text-lg hover:opacity-90 transition-opacity shadow-elevated"
+          >
+            Donate Now
+          </a>
         </motion.div>
       </div>
     </section>

@@ -4,13 +4,23 @@ interface PageHeaderProps {
   title: string;
   breadcrumb: string;
   backgroundImage: string;
+  imageClassName?: string;
 }
 
-const PageHeader = ({ title, breadcrumb, backgroundImage }: PageHeaderProps) => {
+const PageHeader = ({
+  title,
+  breadcrumb,
+  backgroundImage,
+  imageClassName,
+}: PageHeaderProps) => {
   return (
-    <section className="relative h-[45vh] min-h-[320px] flex items-center justify-center overflow-hidden">
+    <section className="relative h-[60vh] min-h-[440px] md:min-h-[520px] flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0">
-        <img src={backgroundImage} alt={title} className="w-full h-full object-cover" />
+        <img
+          src={backgroundImage}
+          alt={title}
+          className={`w-full h-full object-cover object-center ${imageClassName ?? ""}`}
+        />
         <div className="absolute inset-0 bg-gradient-hero" />
       </div>
       <div className="relative z-10 text-center pt-20">
@@ -28,7 +38,9 @@ const PageHeader = ({ title, breadcrumb, backgroundImage }: PageHeaderProps) => 
           transition={{ delay: 0.3 }}
           className="flex items-center justify-center gap-2 font-body text-sm text-primary-foreground/70 uppercase tracking-wider"
         >
-          <a href="/" className="hover:text-primary transition-colors">Homepage</a>
+          <a href="/" className="hover:text-primary transition-colors">
+            Homepage
+          </a>
           <span>›</span>
           <span>{breadcrumb}</span>
         </motion.div>

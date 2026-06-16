@@ -13,10 +13,10 @@ export const allProjects: Project[] = [
   {
     slug: "digital-tech-to-advance-learning",
     title: "Digital Tech To Advance Learning",
-    period: "April – May 2026",
-    raised: 2500,
+    period: "May – Jun 2026",
+    raised: 46800,
     goal: 50000,
-    donors: 26,
+    donors: 367,
     image: "/images/PXL_20260301_190855566-1-scaled.jpg",
     description:
       "As technology advances rapidly, learning methods are evolving at an equal pace. But many kids in our community do not have access to the devices and tools their peers use every day. This drive is focused on helping kids from marginalized schools receive the tools they lack – calculators, Chromebooks, and iPads.",
@@ -25,9 +25,9 @@ export const allProjects: Project[] = [
     slug: "driving-equity-through-financial-literacy",
     title: "Driving Equity through Financial Literacy",
     period: "March – April 2026",
-    raised: 4250,
+    raised: 7550,
     goal: 7500,
-    donors: 18,
+    donors: 128,
     image: "/images/Rice-Kids-Why-Education-1-1-scaled.jpg",
     description:
       "One of the most important types of literacy is financial literacy, and very few, if any, resources are available to students in schools. We arrange for a financial literacy expert to meet with students and teach them fundamental concepts of resources, opportunities, income, assets, liabilities, and investing. This early exposure helps kids make the right decisions and inspires them toward financial independence.",
