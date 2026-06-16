@@ -40,7 +40,7 @@ const ProjectDetail = () => {
           <img
             src={projectDetailHeaderBg}
             alt={project.title}
-            className="w-full h-full object-cover object-center scale-110 translate-y-8"
+            className="w-full h-full object-cover object-top"
           />
           <div className="absolute inset-0 bg-gradient-hero" />
         </div>
