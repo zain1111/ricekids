@@ -35,7 +35,7 @@ const ProjectDetail = () => {
       <Navbar />
 
       {/* Hero */}
-      <section className="relative h-[60vh] min-h-[440px] md:min-h-[520px] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[65vh] min-h-[480px] md:min-h-[580px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img
             src={projectDetailHeaderBg}
