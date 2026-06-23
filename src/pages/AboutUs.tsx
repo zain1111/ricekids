@@ -124,7 +124,7 @@ const AboutUs = () => {
               {
                 title: "Vision",
                 description:
-                  "Eliminate structural poverty by 2040 via education and holistic support",
+                  "Eliminate structural poverty by 2040 via education and holistic support.",
                 image: "/images/IMG_9999-scaled.jpg",
               },
               {

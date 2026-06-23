@@ -6,7 +6,7 @@ const cards = [
   {
     title: "Vision",
     description:
-      "Eliminate structural poverty by 2040 via education and holistic support",
+      "Eliminate structural poverty by 2040 via education and holistic support.",
     image: "/images/IMG_9999-scaled.jpg",
   },
   {
@@ -69,7 +69,7 @@ const AboutSection = () => {
         >
           <Shield className="w-5 h-5 text-primary flex-shrink-0" />
           <span>
-            Rice Kids is tax-exempt under the IRS 501(c)(3) classification. All donations are tax-exempt
+            Rice Kids is tax-exempt under the IRS 501(c)(3) classification. All donations are tax-exempt.
           </span>
         </motion.p>
 

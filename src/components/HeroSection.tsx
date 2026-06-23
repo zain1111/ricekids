@@ -141,13 +141,11 @@ const slides: Slide[] = [
 
 const HeroSection = () => {
   const [index, setIndex] = useState(0);
-  const [paused, setPaused] = useState(false);
 
   useEffect(() => {
-    if (paused) return;
     const t = setInterval(() => setIndex((i) => (i + 1) % slides.length), 6000);
     return () => clearInterval(t);
-  }, [paused]);
+  }, []);
 
   const go = (dir: number) =>
     setIndex((i) => (i + dir + slides.length) % slides.length);
@@ -159,8 +157,6 @@ const HeroSection = () => {
     <section
       id="home"
       className="relative h-[85vh] min-h-[640px] flex items-center overflow-hidden"
-      onMouseEnter={() => setPaused(true)}
-      onMouseLeave={() => setPaused(false)}
     >
       {/* Slides */}
       <AnimatePresence mode="sync">
