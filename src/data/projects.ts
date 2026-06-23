@@ -8,6 +8,7 @@ export interface Project {
   image: string;
   images?: string[];
   description: string;
+  additionalDescription?: string;
 }
 
 export const allProjects: Project[] = [
@@ -96,7 +97,7 @@ export const allProjects: Project[] = [
   },
   {
     slug: "rice-kids-sunaayy",
-    title: "Rice Kids + Sunaay",
+    title: "Rice Kids + Sunaayy",
     period: "Aug – Sep 2025",
     raised: 5050,
     goal: 5000,
@@ -126,6 +127,8 @@ export const allProjects: Project[] = [
     image: "/images/Rice-Kids-Jharkhand-Center.jpg",
     description:
       "Supporting our Jharkhand center where young learners are immersed in their books, supporting each other, totally ignoring their challenging circumstances.",
+    additionalDescription:
+      "Moments like these remind us why we do what we do. Every child deserves an opportunity to learn and grow, and we are committed to providing the resources and support they need.",
   },
   {
     slug: "ncr-street-education-program",
@@ -152,12 +155,16 @@ export const allProjects: Project[] = [
   },
   {
     slug: "thanksgiving-winter-drive",
-    title: "Thanksgiving Drive-Thru",
+    title: "Thanksgiving Winter Drive",
     period: "November 2024",
     raised: 6150,
     goal: 6000,
     donors: 89,
     image: "/images/IMG-20241124-WA0023.jpg",
+    images: [
+      "/images/IMG-20241124-WA0023.jpg",
+      "/images/thanksgiving-winter-drive-2.png",
+    ],
     description:
       "Rice Kids team is blessed with the support of so many donors and volunteers who helped us run this drive. We sourced winter supplies for kids who don't have basic items like jackets, gloves, and hats, and delivered them to multiple locations. We organized around Thanksgiving to ensure every home has the opportunity to prepare for the winter ahead.",
   },
@@ -169,6 +176,10 @@ export const allProjects: Project[] = [
     goal: 2000,
     donors: 21,
     image: "/images/IMG_0057-n.jpg",
+    images: [
+      "/images/IMG_0057-n.jpg",
+      "/images/sponsorship-program-2.png",
+    ],
     description:
       "Incredible to see dedication and hard work of the kids as they pave the path to prosperity with return to mainstream education. Our team is honored to support them in their journey with education scholarships as they are admitted to prestigious schools.",
   },
@@ -191,6 +202,11 @@ export const allProjects: Project[] = [
     goal: 1500,
     donors: 39,
     image: "/images/PXL_20241123_144443989-scaled.jpg",
+    images: [
+      "/images/PXL_20241123_144443989-scaled.jpg",
+      "/images/upper-east-side-event-2.png",
+      "/images/upper-east-side-event-3.png",
+    ],
     description:
       "A great outing to support the many kids at local NYC schools who struggle with poverty in the city, and only get to eat cold or brown bag meals. We partnered with local organizations to prepare and deliver to schools, where kids were ecstatic to receive hot/nutritious meals and supplies. This is becoming even more important as the cost of living continues to rise.",
   },
@@ -247,6 +263,11 @@ export const allProjects: Project[] = [
     goal: 7500,
     donors: 148,
     image: "/images/PXL_20240413_135504026-scaled.jpg",
+    images: [
+      "/images/PXL_20240413_135504026-scaled.jpg",
+      "/images/kasa-south-amboy-partnership-2.png",
+      "/images/kasa-south-amboy-partnership-3.png",
+    ],
     description:
       "Rice Kids team, Kaur and Singh Academy, and South Amboy Kitchen came together for this hugely successful drive. Like-minded families, kids, and volunteers from various backgrounds helped prepare hot meals and serve them at over a dozen locations in the northeast.",
   },
@@ -269,6 +290,11 @@ export const allProjects: Project[] = [
     goal: 2000,
     donors: 46,
     image: "/images/PXL_20240413_162630587-scaled.jpg",
+    images: [
+      "/images/PXL_20240413_162630587-scaled.jpg",
+      "/images/help-at-the-doorstep-2.png",
+      "/images/help-at-the-doorstep-3.png",
+    ],
     description:
       "We proudly collaborated with NJ businesses to support them in their community efforts and helped reach hundreds of needy families in New Jersey providing them with hot and nutritious meals at their doorstep.",
   },
@@ -280,6 +306,11 @@ export const allProjects: Project[] = [
     goal: 2000,
     donors: 49,
     image: "/images/IMG_4256-1.jpg",
+    images: [
+      "/images/IMG_4256-1.jpg",
+      "/images/sandwiches-with-a-smile-2.png",
+      "/images/sandwiches-with-a-smile-3.png",
+    ],
     description:
       "Kids have so much energy – we just need to channel it the right way. We experienced this as kids and families came together to pack thousands of sandwiches that were delivered and served to the needy in South Jersey communities.",
   },
@@ -291,6 +322,10 @@ export const allProjects: Project[] = [
     goal: 1500,
     donors: 37,
     image: "/images/PXL_20230304_150423735.jpg",
+    images: [
+      "/images/PXL_20230304_150423735.jpg",
+      "/images/balanced-meals-local-community-2.png",
+    ],
     description:
       "The Rice Kids team cooked meals at a community kitchen to serve the local population providing a meal with the right amount of protein, vegetables, fiber rich carbohydrates, fats, drinks, and some dessert!",
   },
@@ -313,6 +348,11 @@ export const allProjects: Project[] = [
     goal: 1200,
     donors: 31,
     image: "/images/PXL_20230213_000910226.jpg",
+    images: [
+      "/images/PXL_20230213_000910226.jpg",
+      "/images/north-jersey-hot-meals-2.png",
+      "/images/north-jersey-hot-meals-3.png",
+    ],
     description:
       "The Rice Kids team cooked and served meals delivered to North Jersey shelters and community centers driving forward our mission of providing hot meals balanced with the right amount of nutrition for everyone.",
   },
@@ -346,6 +386,12 @@ export const allProjects: Project[] = [
     goal: 5000,
     donors: 102,
     image: "/images/IMG_2207.jpg",
+    images: [
+      "/images/IMG_2207.jpg",
+      "/images/bags-of-hope-2.png",
+      "/images/bags-of-hope-3.png",
+      "/images/bags-of-hope-4.png",
+    ],
     description:
       "The Rice Kids team and all the wonderful volunteers ran a campaign to provide breakfast and snack time brown bags for kids and families across NJ. Thousands of bags were packed and delivered to food insecure individuals. Thanks to hundreds of volunteers who helped with this drive, especially young kids who helped with all their passion sporting a big smile!",
   },
@@ -380,6 +426,11 @@ export const allProjects: Project[] = [
     goal: 1500,
     donors: 63,
     image: "/images/IMG_2015.jpg",
+    images: [
+      "/images/IMG_2015.jpg",
+      "/images/feeding-homeless-upper-west-side-2.png",
+      "/images/feeding-homeless-upper-west-side-3.png",
+    ],
     description:
       "Working with so many lovely local community volunteers in New York City to reach the homeless who are in desperate need of nutritious and balanced meals.",
   },
@@ -391,6 +442,11 @@ export const allProjects: Project[] = [
     goal: 2000,
     donors: 81,
     image: "/images/IMG_1931-543x407.jpg",
+    images: [
+      "/images/IMG_1931-543x407.jpg",
+      "/images/fresh-produce-pantry-2.png",
+      "/images/fresh-produce-pantry-3.png",
+    ],
     description:
       "Everyone needs fresh produce but unfortunately among rising inflation and exorbitant food costs, it has become out of reach for most poor households. Rice Kids partnered with organizations in NYC to deliver fresh produce and pantry supplies to the needy.",
   },
@@ -402,6 +458,10 @@ export const allProjects: Project[] = [
     goal: 1200,
     donors: 39,
     image: "/images/IMG_1937.jpg",
+    images: [
+      "/images/IMG_1937.jpg",
+      "/images/advent-community-2.png",
+    ],
     description:
       "Hot meals for the Advent community in New York City – prepared delicious meals at the common kitchen and served the community in the afternoon.",
   },
@@ -413,6 +473,10 @@ export const allProjects: Project[] = [
     goal: 1500,
     donors: 72,
     image: "/images/IMG_9700.jpg",
+    images: [
+      "/images/IMG_9700.jpg",
+      "/images/morristown-food-drive-2.png",
+    ],
     description:
       "Prepared fresh nutritious meals at a community kitchen and brought them to multiple Morristown locations including homeless shelters in the area.",
   },
@@ -435,6 +499,10 @@ export const allProjects: Project[] = [
     goal: 5000,
     donors: 322,
     image: "/images/IMG_9688.jpg",
+    images: [
+      "/images/IMG_9688.jpg",
+      "/images/holiday-meal-program-2.png",
+    ],
     description:
       "Worked with local school systems to raise awareness of the hunger crisis and help local families and individuals in need. It is especially important during the holiday time when most people are on a spending spree but some are struggling to put food on the table.",
   },
@@ -446,6 +514,11 @@ export const allProjects: Project[] = [
     goal: 2000,
     donors: 82,
     image: "/images/IMG_9710.jpg",
+    images: [
+      "/images/IMG_9710.jpg",
+      "/images/serving-families-crisis-2.png",
+      "/images/serving-families-crisis-3.png",
+    ],
     description:
       "Worked with neighborhood groups to raise awareness about families in desperate need of proper nutrition. All the families were in NJ and were struggling due to unforeseen crises or situations.",
   },
@@ -457,6 +530,11 @@ export const allProjects: Project[] = [
     goal: 15000,
     donors: 822,
     image: "/images/Project-6-3-543x407.jpg",
+    images: [
+      "/images/Project-6-3-543x407.jpg",
+      "/images/india-covid-relief-2.png",
+      "/images/india-covid-relief-3.png",
+    ],
     description:
       "India’s second Covid wave took the lives of hundreds of thousands of citizens, while healthcare infrastructure completely collapsed. Hundreds of thousands of people couldn’t find oxygen support as cities ran out of oxygen, including the suppply to hospitals. This small program helped Covid patients in desperate need. To ensure proper use of funds, we worked with local partners who had accurate onthe ground knowledge.",
   },
@@ -468,6 +546,11 @@ export const allProjects: Project[] = [
     goal: 3000,
     donors: 140,
     image: "/images/IMG_0744-543x407.jpg",
+    images: [
+      "/images/IMG_0744-543x407.jpg",
+      "/images/food-bank-drive-2.png",
+      "/images/food-bank-drive-3.png",
+    ],
     description:
       "Partnered with local food banks to help stock up basic food supplies. Involved elementary and middle school kids to pack dry food and bringing it over to delivery centers.",
   },
@@ -479,6 +562,11 @@ export const allProjects: Project[] = [
     goal: 2400,
     donors: 124,
     image: "/images/IMG_9685-543x407.jpg",
+    images: [
+      "/images/IMG_9685-543x407.jpg",
+      "/images/new-york-feeding-homeless-2.png",
+      "/images/new-york-feeding-homeless-3.png",
+    ],
     description:
       "Coordinated with local organizations and set up food serving tables and delivery vans to serve food to the needy and homeless in New York City.",
   },
@@ -501,6 +589,11 @@ export const allProjects: Project[] = [
     goal: 3000,
     donors: 264,
     image: "/images/IMG_0774.jpg",
+    images: [
+      "/images/IMG_0774.jpg",
+      "/images/nj-food-service-2.png",
+      "/images/nj-food-service-3.png",
+    ],
     description:
       "Coordinated with 86 shelters, churches, and other serving locations to serve hot nutrition meals to needy families and individuals. Organized mass cooking and delivery of food to multiple locations.",
   },
@@ -512,6 +605,11 @@ export const allProjects: Project[] = [
     goal: 10000,
     donors: 450,
     image: "/images/Project-1-2--543x407.jpg",
+    images: [
+      "/images/Project-1-2--543x407.jpg",
+      "/images/ncr-india-covid-food-service-2.png",
+      "/images/ncr-india-covid-food-service-3.png",
+    ],
     description:
       "Worked with local charities in the NCR region to organize free langar services for migrant workers and other needy individuals and families who had lost their source of income at the beginning of the pandemic.",
   },
@@ -524,8 +622,14 @@ export const allProjects: Project[] = [
     donors: 30,
     image:
       "/images/Rice-Kids-Anakh-11th-Birthday-Featured.jpg",
+    images: [
+      "/images/Rice-Kids-Anakh-11th-Birthday-Featured.jpg",
+      "/images/anakh-11th-birthday-2.png",
+      "/images/anakh-11th-birthday-3.png",
+      "/images/anakh-11th-birthday-4.png",
+    ],
     description:
-      "Nearly 1 in 8 NYC residents, and 1 in 9 NJ residents are food insecure. That rate is even higher for kids. To help feed the hungry, Anakh is donating her birthday this year. Instead of celebration and gifts, she would like to raise money for the cause. Through Rice Kids, Anakh's family is hosting 4 cook-offs and food service days between Feb and April to serve more than 500 people in NJ-NYC area. If you would like to volunteer, please reach out! Other than time commitment, it would be great if you can help Anakh raise money for this initiative, so she can can reach even a greater number number of people.",
+      "Nearly 1 in 8 NYC residents, and 1 in 9 NJ residents are food insecure. That rate is even higher for kids. To help feed the hungry, Anakh is donating her birthday this year. Instead of celebration and gifts, she would like to raise money for the cause. Through Rice Kids, Anakh's family is hosting 4 cook-offs and food service days between Feb and April to serve more than 500 people in NJ-NYC area. If you would like to volunteer, please reach out! Other than time commitment, it would be great if you can help Anakh raise money for this initiative, so she can reach an even greater number of people.",
   },
   {
     slug: "akhil-bhartiya-netrahin-sangh",
@@ -536,6 +640,11 @@ export const allProjects: Project[] = [
     donors: 28,
     image:
       "/images/Rice-Kids-Serving-Blind-India-Featured.jpg",
+    images: [
+      "/images/Rice-Kids-Serving-Blind-India-Featured.jpg",
+      "/images/akhil-bhartiya-netrahin-sangh-1.png",
+      "/images/akhil-bhartiya-netrahin-sangh-2.png",
+    ],
     description:
       "Akhil Bhartiya Netrahin Sangh is one of the biggest schools for kids who are blind, or have some form of vision impairment. It provides free lodging, meals, education, and supplies to kids in need. Visiting the school has been one of the most humbling experiences for the Rice Kids team. As we saw these talented kids study, play, and take care of their daily chores without any support, it brought tears to our eyes. Not because we thought they had a disability, but for our impairments. In that moment, we felt pity for ourselves in how we deal with life’s challenges. If anything, these kids have special abilities, and the courage they exhibit cannot be described in words. The icing on the cake was their constant and infectious smile that they carried effortlessly throughout the day.",
   },
@@ -548,8 +657,14 @@ export const allProjects: Project[] = [
     donors: 32,
     image:
       "/images/Rice-Kids-Agape-house-somerville-featured.jpg",
+    images: [
+      "/images/Rice-Kids-Agape-house-somerville-featured.jpg",
+      "/images/agape-house-families-2.png",
+    ],
     description:
       "Somerset county has many homeless shelters that provide resources to families. One such shelter is Agape House run by Volunteers of America. Most of the families are unable to afford nutritious food.",
+    additionalDescription:
+      "Rice Kids got in touch with the homeless shelter coordinators to deliver hot meals for these families.",
   },
   {
     slug: "serving-homeless-new-york",
@@ -560,7 +675,13 @@ export const allProjects: Project[] = [
     donors: 43,
     image:
       "/images/Rice-Kids-Serving-Homeless-NY-Featured-Image.jpg",
+    images: [
+      "/images/Rice-Kids-Serving-Homeless-NY-Featured-Image.jpg",
+      "/images/serving-homeless-new-york-2.png",
+    ],
     description:
       "We organized a cook-off, and delivered food to specific locations across New York city. It was a great experience for both adults and kids who were able to catchup with the community and learn about their challenges. Everyone was really appreciative of the chance to eat warm and nutritious food.",
+    additionalDescription:
+      "After delivery of food to multiple locations, we set up a serving station inside the church. Thanks to everyone who volunteered for this drive!",
   },
 ];

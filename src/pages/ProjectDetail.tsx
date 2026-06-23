@@ -29,6 +29,8 @@ const ProjectDetail = () => {
   }
 
   const pct = Math.round((project.raised / project.goal) * 100);
+  const projectImages = project.images ?? [project.image];
+  const useGrid = projectImages.length > 1;
 
   return (
     <div className="min-h-screen">
@@ -139,6 +141,11 @@ const ProjectDetail = () => {
             <p className="font-body text-lg leading-relaxed text-foreground font-medium">
               {project.description}
             </p>
+            {project.additionalDescription && (
+              <p className="font-body text-lg leading-relaxed text-foreground font-medium mt-6">
+                {project.additionalDescription}
+              </p>
+            )}
           </motion.div>
 
           {/* Donate Button */}
@@ -159,23 +166,49 @@ const ProjectDetail = () => {
           </motion.div>
 
           {/* Project Images */}
-          <div className="space-y-6">
-            {(project.images ?? [project.image]).map((src, i) => (
-              <motion.div
-                key={src}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.7 + i * 0.1 }}
-                className="rounded-2xl overflow-hidden shadow-elevated"
-              >
-                <img
-                  src={src}
-                  alt={`${project.title}${i > 0 ? ` ${i + 1}` : ""}`}
-                  className="w-full h-auto"
-                />
-              </motion.div>
-            ))}
-          </div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.7 }}
+          >
+            {useGrid ? (
+              <div className="grid grid-cols-2 gap-4">
+                {projectImages.map((src, i) => (
+                  <motion.div
+                    key={src}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.75 + i * 0.08 }}
+                    className="group overflow-hidden rounded-2xl shadow-elevated aspect-[4/3]"
+                  >
+                    <img
+                      src={src}
+                      alt={`${project.title}${i > 0 ? ` ${i + 1}` : ""}`}
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
+                  </motion.div>
+                ))}
+              </div>
+            ) : (
+              <div className="space-y-6">
+                {projectImages.map((src, i) => (
+                  <motion.div
+                    key={src}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.7 + i * 0.1 }}
+                    className="rounded-2xl overflow-hidden shadow-elevated"
+                  >
+                    <img
+                      src={src}
+                      alt={`${project.title}${i > 0 ? ` ${i + 1}` : ""}`}
+                      className="w-full h-auto"
+                    />
+                  </motion.div>
+                ))}
+              </div>
+            )}
+          </motion.div>
         </div>
       </section>
 
