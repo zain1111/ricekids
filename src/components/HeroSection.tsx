@@ -4,6 +4,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 type Slide = {
   image: string;
+  imagePosition?: "top" | "center" | "bottom";
   eyebrow?: string;
   logo?: string;
   title: React.ReactNode;
@@ -61,6 +62,27 @@ const slides: Slide[] = [
       href: "https://www.youtube.com/watch?v=53QXRJyFz-s",
     },
     align: "center",
+  },
+  {
+    image: "/images/india-abroad-impact-100-hero.png",
+    imagePosition: "top",
+    eyebrow: "FEATURED ON",
+    logo: "/images/NIA-Logo-3.webp",
+    title: (
+      <>
+        Anakh Sawhney named Top 100
+        <br />
+        Indian Americans Who Made
+        <br />
+        Transformational Impact in 2025
+      </>
+    ),
+    titleClassName: "text-xl sm:text-2xl md:text-3xl lg:text-4xl",
+    cta: {
+      label: "Read Full Story",
+      href: "https://www.newindiaabroad.com/english/newspaper/-india-abroad-impact-100",
+    },
+    align: "left",
   },
   {
     image:
@@ -171,7 +193,13 @@ const HeroSection = () => {
           <img
             src={slide.image}
             alt=""
-            className="w-full h-full object-cover"
+            className={`w-full h-full object-cover ${
+              slide.imagePosition === "top"
+                ? "object-top"
+                : slide.imagePosition === "bottom"
+                  ? "object-bottom"
+                  : "object-center"
+            }`}
           />
           {slide.overlay && (
             <div className="absolute inset-0 bg-gradient-hero" />
