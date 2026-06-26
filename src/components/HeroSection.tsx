@@ -178,7 +178,7 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="relative h-[85vh] min-h-[640px] flex items-center overflow-hidden"
+      className="relative h-[55vh] min-h-[360px] md:h-[85vh] md:min-h-[640px] flex items-center overflow-hidden"
     >
       {/* Slides */}
       <AnimatePresence mode="sync">
@@ -251,22 +251,22 @@ const HeroSection = () => {
             )}
             {slide.cta && (
               <div
-                className={`flex flex-col sm:flex-row gap-4 ${
-                  alignLeft ? "justify-start" : "justify-center"
+                className={`flex flex-col sm:flex-row gap-3 sm:gap-4 ${
+                  alignLeft ? "items-start sm:justify-start" : "items-center sm:justify-center"
                 }`}
               >
                 <a
                   href={slide.cta.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-gradient-warm text-primary-foreground px-8 py-3 rounded-full font-body font-bold text-base hover:opacity-90 transition-opacity shadow-elevated"
+                  className="w-fit bg-gradient-warm text-primary-foreground px-5 py-2.5 sm:px-8 sm:py-3 rounded-full font-body font-bold text-sm sm:text-base hover:opacity-90 transition-opacity shadow-elevated"
                 >
                   {slide.cta.label}
                 </a>
                 {index === 0 && (
                   <a
                     href="#about"
-                    className="border-2 border-primary-foreground/40 text-primary-foreground px-8 py-3 rounded-full font-body font-bold text-base hover:bg-primary-foreground/10 transition-colors"
+                    className="w-fit border-2 border-primary-foreground/40 text-primary-foreground px-5 py-2.5 sm:px-8 sm:py-3 rounded-full font-body font-bold text-sm sm:text-base hover:bg-primary-foreground/10 transition-colors"
                   >
                     Learn More
                   </a>
@@ -281,20 +281,20 @@ const HeroSection = () => {
       <button
         aria-label="Previous slide"
         onClick={() => go(-1)}
-        className="absolute left-4 md:left-6 top-1/2 -translate-y-1/2 z-20 h-12 w-12 rounded-full bg-background/20 backdrop-blur-sm border border-primary-foreground/30 text-primary-foreground flex items-center justify-center hover:bg-background/40 transition"
+        className="hidden md:flex absolute left-4 md:left-6 top-1/2 -translate-y-1/2 z-20 h-12 w-12 rounded-full bg-background/20 backdrop-blur-sm border border-primary-foreground/30 text-primary-foreground items-center justify-center hover:bg-background/40 transition"
       >
         <ChevronLeft className="h-6 w-6" />
       </button>
       <button
         aria-label="Next slide"
         onClick={() => go(1)}
-        className="absolute right-4 md:right-6 top-1/2 -translate-y-1/2 z-20 h-12 w-12 rounded-full bg-background/20 backdrop-blur-sm border border-primary-foreground/30 text-primary-foreground flex items-center justify-center hover:bg-background/40 transition"
+        className="hidden md:flex absolute right-4 md:right-6 top-1/2 -translate-y-1/2 z-20 h-12 w-12 rounded-full bg-background/20 backdrop-blur-sm border border-primary-foreground/30 text-primary-foreground items-center justify-center hover:bg-background/40 transition"
       >
         <ChevronRight className="h-6 w-6" />
       </button>
 
       {/* Dots */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex gap-2">
+      <div className="hidden md:flex absolute bottom-8 left-1/2 -translate-x-1/2 z-20 gap-2">
         {slides.map((_, i) => (
           <button
             key={i}
