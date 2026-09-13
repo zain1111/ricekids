@@ -85,9 +85,11 @@ const ProjectDetail = () => {
               </div>
               <div>
                 <h3 className="font-display text-2xl font-bold text-foreground">
-                  ${project.raised.toLocaleString()} Raised
+                  ${project.goal.toLocaleString()} Goal
                 </h3>
-                <p className="font-body text-sm text-muted-foreground">Out of ${project.goal.toLocaleString()}</p>
+                <p className="font-body text-sm text-muted-foreground">
+                  ${project.raised.toLocaleString()} raised
+                </p>
               </div>
             </div>
 
@@ -120,8 +122,12 @@ const ProjectDetail = () => {
             className="mb-16"
           >
             <div className="flex justify-between items-center font-body text-sm text-muted-foreground mb-2">
-              <span className="font-semibold text-foreground">Goal Progress</span>
-              <span className="font-semibold text-foreground">{Math.min(pct, 100)}%</span>
+              <span className="font-semibold text-foreground">
+                ${project.raised.toLocaleString()} raised
+              </span>
+              <span className="font-semibold text-foreground">
+                ${project.goal.toLocaleString()} goal · {Math.min(pct, 100)}%
+              </span>
             </div>
             <div className="w-full bg-muted rounded-full h-3">
               <div
