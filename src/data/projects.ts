@@ -15,10 +15,10 @@ export const allProjects: Project[] = [
   {
     slug: "advancing-learning-with-essential-resources",
     title: "Advancing Learning With Essential Resources",
-    period: "Jun – Aug 2026",
-    raised: 2200,
+    period: "Jun – Sep 2026",
+    raised: 5850,
     goal: 12500,
-    donors: 48,
+    donors: 97,
     image: "/images/advancing-learning-essential-resources-1.jpg",
     images: [
       "/images/advancing-learning-essential-resources-1.jpg",
@@ -32,9 +32,9 @@ export const allProjects: Project[] = [
     slug: "digital-tech-to-advance-learning",
     title: "Digital Tech To Advance Learning",
     period: "May – Jun 2026",
-    raised: 46800,
+    raised: 51025,
     goal: 50000,
-    donors: 367,
+    donors: 381,
     image: "/images/PXL_20260301_190855566-1-scaled.jpg",
     description:
       "As technology advances rapidly, learning methods are evolving at an equal pace. But many kids in our community do not have access to the devices and tools their peers use every day. This drive is focused on helping kids from marginalized schools receive the tools they lack – calculators, Chromebooks, and iPads.",
