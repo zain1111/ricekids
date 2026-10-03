@@ -4,6 +4,20 @@ import { ExternalLink } from "lucide-react";
 
 const newsItems = [
   {
+    title: "Bernardsville High senior is runner up in public service competition",
+    excerpt:
+      "Bernardsville High School senior Anakh Sawhney is among runners-up for The Gloria Barron Prize for Young Heroes, celebrating inspiring, public-spirited young people.",
+    link: "https://www.newjerseyhills.com/bernardsville_news/news/bernardsville-high-senior-is-runner-up-in-public-service-competition/article_c254f415-90d1-47a8-af5e-fa68744c376b.html",
+    image: "/images/bernardsville-public-service-competition.jpg",
+  },
+  {
+    title: "Anakh Sawhney selected winner for the NJ State Governor's Volunteerism Awards",
+    excerpt:
+      "Anakh Sawhney has been selected as a winner for the New Jersey State Governor's Volunteerism Awards.",
+    link: "/docs/Anakh-Sawhney-NJ-State-Volunteerism-Award.pdf",
+    image: "/images/nj-governors-volunteerism-awards.jpg",
+  },
+  {
     title: "Teen founder Anakh Sawhney tackles 'opportunity poverty' through integrated nutrition–education model",
     excerpt: "Anakh Sawhney, the 16-year-old Founder & CEO of Rice Kids, is redefining how interconnected challenges of hunger, education inequality are addressed.",
     link: "https://etedge-insights.com/resources/brands-speak/teen-founder-anakh-sawhney-tackles-opportunity-poverty-through-integrated-nutrition-education-model/",

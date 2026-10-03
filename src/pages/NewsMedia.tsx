@@ -7,6 +7,20 @@ import PageHeader from "@/components/PageHeader";
 
 const allNews = [
   {
+    title: "Bernardsville High senior is runner up in public service competition",
+    excerpt:
+      "Bernardsville High School senior Anakh Sawhney is among runners-up for The Gloria Barron Prize for Young Heroes, celebrating inspiring, public-spirited young people.",
+    link: "https://www.newjerseyhills.com/bernardsville_news/news/bernardsville-high-senior-is-runner-up-in-public-service-competition/article_c254f415-90d1-47a8-af5e-fa68744c376b.html",
+    image: "/images/bernardsville-public-service-competition.jpg",
+  },
+  {
+    title: "Anakh Sawhney selected winner for the NJ State Governor's Volunteerism Awards",
+    excerpt:
+      "Anakh Sawhney has been selected as a winner for the New Jersey State Governor's Volunteerism Awards.",
+    link: "/docs/Anakh-Sawhney-NJ-State-Volunteerism-Award.pdf",
+    image: "/images/nj-governors-volunteerism-awards.jpg",
+  },
+  {
     title: "Every Child Deserves More Than an Impossible Choice",
     excerpt: "Founder & CEO of Rice Kids, Anakh Sawhney argues education and community leadership break cycles of poverty",
     link: "https://www.newindiaabroad.com/english/opinion/every-child-deserves-more-than-an-impossible-choice",
