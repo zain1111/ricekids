@@ -81,7 +81,7 @@ const NewsSection = () => {
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-8">
-          {newsItems.map((item, i) => (
+          {newsItems.slice(0, 8).map((item, i) => (
             <motion.a
               key={i}
               href={item.link}
