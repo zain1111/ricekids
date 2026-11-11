@@ -14,6 +14,7 @@ type Slide = {
   title: React.ReactNode;
   titleClassName?: string;
   subtitle?: React.ReactNode;
+  subtitleClassName?: string;
   cta?: SlideCta;
   secondaryCta?: SlideCta;
   align?: "center" | "left";
@@ -52,22 +53,18 @@ const slides: Slide[] = [
   {
     image: "/images/Rice-Kids-Classroom.jpg",
     overlay: "strong",
-    eyebrow: "District & Community Collaborative Program",
     title: (
       <>
-        The 360° Student Wellness
-        <br className="hidden md:block" /> & Learning Program
+        Flagship Program:
+        <br />
+        The 360 Student Wellness & Learning
       </>
     ),
-    subtitle:
-      "An integrated model delivered in partnership with Newark Public Schools and five leading community partners.",
+    subtitle: "Delivered in partnership with Newark Public Schools and five leading community partners.",
+    subtitleClassName: "text-lg sm:text-xl md:text-2xl",
     cta: {
-      label: "Support the Program",
-      href: `/projects/${studentWellnessProjectSlug}#support`,
-    },
-    secondaryCta: {
-      label: "Explore the Pillars",
-      href: `/projects/${studentWellnessProjectSlug}#pillars`,
+      label: "About The Program",
+      href: `/projects/${studentWellnessProjectSlug}`,
     },
     align: "center",
   },
@@ -221,7 +218,7 @@ const HeroSection = () => {
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
-    const t = setInterval(() => setIndex((i) => (i + 1) % slides.length), 6000);
+    const t = setInterval(() => setIndex((i) => (i + 1) % slides.length), 12000);
     return () => clearInterval(t);
   }, []);
 
@@ -304,7 +301,11 @@ const HeroSection = () => {
               {slide.title}
             </h1>
             {slide.subtitle && (
-              <p className="font-body text-base md:text-lg text-primary-foreground/90 mb-8 leading-relaxed">
+              <p
+                className={`font-body text-primary-foreground/90 mb-8 leading-relaxed ${
+                  slide.subtitleClassName ?? "text-base md:text-lg"
+                }`}
+              >
                 {slide.subtitle}
               </p>
             )}

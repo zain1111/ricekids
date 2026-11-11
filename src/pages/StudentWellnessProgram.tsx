@@ -142,7 +142,7 @@ const StudentWellnessProgram = () => {
     <div className="min-h-screen">
       <Navbar />
 
-      <section className="relative min-h-[640px] md:min-h-[720px] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[55vh] min-h-[360px] md:h-[85vh] md:min-h-[640px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img
             src={heroImage}
@@ -150,32 +150,26 @@ const StudentWellnessProgram = () => {
             className="w-full h-full object-cover object-center"
           />
           <div className="absolute inset-0 bg-gradient-hero" />
-          <div className="absolute inset-0 bg-foreground/50" />
+          <div className="absolute inset-0 bg-foreground/45" />
         </div>
-        <div className="relative z-10 text-center pt-24 pb-16 px-6 max-w-4xl mx-auto">
-          <motion.p
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="inline-block font-body text-xs md:text-sm uppercase tracking-[0.22em] font-semibold text-primary-foreground bg-primary-foreground/15 border border-primary-foreground/30 rounded-full px-4 py-2 mb-6"
-          >
-            District & Community Collaborative Program
-          </motion.p>
+        <div className="relative z-10 text-center pt-20 px-6 max-w-4xl mx-auto">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-5 leading-tight"
+            className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-5 leading-tight"
           >
-            The 360° Student Wellness & Learning Program
+            Flagship Program:
+            <br />
+            The 360 Student Wellness & Learning
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.15, duration: 0.6 }}
-            className="font-body text-base md:text-lg text-primary-foreground/90 leading-relaxed mb-8 max-w-3xl mx-auto"
+            className="font-body text-lg sm:text-xl md:text-2xl text-primary-foreground/90 leading-relaxed mb-8 max-w-3xl mx-auto"
           >
-            An integrated model delivered in partnership with Newark Public Schools and five leading community partners.
+            Delivered in partnership with Newark Public Schools and five leading community partners.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 12 }}
