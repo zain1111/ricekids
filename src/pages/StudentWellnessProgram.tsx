@@ -42,11 +42,11 @@ const pillars = [
       },
       {
         title: "Pediatric Oral Health Supplies",
-        text: "Three seasonal distributions of complete oral health kits (brushes, fluoride toothpaste, flossers) alongside age-appropriate preventive education to prevent severe dental decay.",
+        text: "Three seasonal distributions of complete oral health kits alongside age-appropriate preventive education.",
       },
       {
         title: "Hygiene & Personal Dignity Kits",
-        text: "Quarterly care packs containing deodorant, soap, dental essentials, menstrual care products, and laundry detergent pods so personal hygiene insecurity never keeps a student home from school.",
+        text: "Quarterly care packs containing deodorant, soap, dental essentials, menstrual care products, and laundry detergent pods.",
       },
     ],
   },
@@ -58,7 +58,7 @@ const pillars = [
     items: [
       {
         title: "Small-Group Tutoring Labs",
-        text: "Two 60-minute after-school sessions per week held at partner school sites and community centers, led by trained tutors focusing on reading comprehension, literacy fluency, and core mathematics.",
+        text: "Two 60-minute after-school virtual sessions per week, led by trained tutors focusing on reading comprehension, literacy fluency, and core mathematics.",
       },
       {
         title: "Classroom Toolkits",
@@ -89,7 +89,7 @@ const benchmarks = [
     number: "2,000",
     title: "Students Reached",
     description:
-      "Weekly food access, hygiene supplies, and wellness resources provided across four Title 1 Newark Public Schools.",
+      "Weekly food access, hygiene supplies, and wellness resources provided across Newark Public Schools.",
   },
   {
     number: "6,000",
@@ -101,7 +101,7 @@ const benchmarks = [
     number: "100%",
     title: "Care Follow-Through",
     description:
-      "Guaranteed vouchers for prescription glasses and direct clinic navigation for students identified with unaddressed vision or chronic care needs.",
+      "Vouchers for prescription glasses and direct clinic navigation for students identified with unaddressed vision or chronic care needs.",
   },
   {
     number: "200+",
@@ -109,7 +109,7 @@ const benchmarks = [
     description: "Focused small-group instruction in reading literacy and foundational mathematics.",
   },
   {
-    number: "15–20%",
+    number: "10-15%",
     title: "Absenteeism Drop",
     description:
       "Reduction in chronic absenteeism monitored directly against district attendance records across enrolled student cohorts.",
@@ -309,7 +309,7 @@ const StudentWellnessProgram = () => {
         <div className="max-w-7xl mx-auto px-6">
           <motion.div {...fadeUp} className="text-center max-w-3xl mx-auto mb-14">
             <p className="font-body text-sm uppercase tracking-[0.25em] text-primary font-semibold mb-3">
-              12-Month Outcomes
+              Our 12-Month Goals
             </p>
             <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground">
               Measurable Impact Benchmarks
@@ -387,7 +387,7 @@ const StudentWellnessProgram = () => {
               Annual Program Operating Budget
             </p>
             <p className="font-body text-lg text-primary-foreground/90 leading-relaxed mb-4">
-              100% of funding directly supports food procurement, clinic care coordination, hygiene kits, and academic supplies across four Newark school communities for the entire academic year.
+              100% of funding directly supports food procurement, clinic care coordination, hygiene kits, and academic supplies across Newark school communities for the entire academic year.
             </p>
             <p className="font-body text-lg text-primary-foreground/90 leading-relaxed mb-10">
               Every dollar contributed delivers direct, tangible relief into the hands of Newark students, ensuring they have the health stability, daily nourishment, and academic encouragement needed to succeed in school.

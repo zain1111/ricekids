@@ -32,7 +32,7 @@ export const allProjects: Project[] = [
     slug: "advancing-learning-with-essential-resources",
     title: "Advancing Learning With Essential Resources",
     period: "Jun – Sep 2026",
-    raised: 5850,
+    raised: 12500,
     goal: 12500,
     donors: 97,
     image: "/images/advancing-learning-essential-resources-1.jpg",
