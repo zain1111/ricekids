@@ -3,12 +3,18 @@ import { motion } from "framer-motion";
 import { DollarSign, Users, Calendar } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { allProjects } from "@/data/projects";
+import { allProjects, studentWellnessProjectSlug } from "@/data/projects";
+import StudentWellnessProgram from "@/pages/StudentWellnessProgram";
 
 const projectDetailHeaderBg = "/images/IMG_9999-scaled.jpg";
 
 const ProjectDetail = () => {
   const { slug } = useParams<{ slug: string }>();
+
+  if (slug === studentWellnessProjectSlug) {
+    return <StudentWellnessProgram />;
+  }
+
   const project = allProjects.find((p) => p.slug === slug);
 
   if (!project) {

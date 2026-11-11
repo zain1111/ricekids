@@ -9,9 +9,25 @@ export interface Project {
   images?: string[];
   description: string;
   additionalDescription?: string;
+  /** Show the annual budget on listing cards instead of a fundraising progress bar. */
+  budgetOnly?: boolean;
 }
 
+export const studentWellnessProjectSlug = "360-student-wellness-learning-program";
+
 export const allProjects: Project[] = [
+  {
+    slug: studentWellnessProjectSlug,
+    title: "The 360° Student Wellness & Learning Program",
+    period: "Academic Year",
+    raised: 0,
+    goal: 200000,
+    donors: 0,
+    budgetOnly: true,
+    image: "/images/Rice-Kids-Classroom.jpg",
+    description:
+      "An integrated model delivered in partnership with Newark Public Schools and five leading community partners. The program connects students with continuous nutrition, clinical follow-up care, essential hygiene supplies, academic tutoring, and near-peer mentorship.",
+  },
   {
     slug: "advancing-learning-with-essential-resources",
     title: "Advancing Learning With Essential Resources",

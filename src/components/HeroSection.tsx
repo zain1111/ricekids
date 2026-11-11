@@ -1,6 +1,10 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { studentWellnessProjectSlug } from "@/data/projects";
+
+type SlideCta = { label: string; href: string };
 
 type Slide = {
   image: string;
@@ -10,12 +14,63 @@ type Slide = {
   title: React.ReactNode;
   titleClassName?: string;
   subtitle?: React.ReactNode;
-  cta?: { label: string; href: string };
+  cta?: SlideCta;
+  secondaryCta?: SlideCta;
   align?: "center" | "left";
-  overlay?: boolean;
+  overlay?: boolean | "strong";
+};
+
+const primaryBtn =
+  "w-fit bg-gradient-warm text-primary-foreground px-5 py-2.5 sm:px-8 sm:py-3 rounded-full font-body font-bold text-sm sm:text-base hover:opacity-90 transition-opacity shadow-elevated";
+const secondaryBtn =
+  "w-fit border-2 border-primary-foreground/40 text-primary-foreground px-5 py-2.5 sm:px-8 sm:py-3 rounded-full font-body font-bold text-sm sm:text-base hover:bg-primary-foreground/10 transition-colors";
+
+const CtaLink = ({ href, label, className }: SlideCta & { className: string }) => {
+  const isExternal = /^(https?:|mailto:)/.test(href) || href.startsWith("/docs/");
+  if (isExternal) {
+    return (
+      <a href={href} target="_blank" rel="noopener noreferrer" className={className}>
+        {label}
+      </a>
+    );
+  }
+  if (href.startsWith("#")) {
+    return (
+      <a href={href} className={className}>
+        {label}
+      </a>
+    );
+  }
+  return (
+    <Link to={href} className={className}>
+      {label}
+    </Link>
+  );
 };
 
 const slides: Slide[] = [
+  {
+    image: "/images/Rice-Kids-Classroom.jpg",
+    overlay: "strong",
+    eyebrow: "District & Community Collaborative Program",
+    title: (
+      <>
+        The 360° Student Wellness
+        <br className="hidden md:block" /> & Learning Program
+      </>
+    ),
+    subtitle:
+      "An integrated model delivered in partnership with Newark Public Schools and five leading community partners.",
+    cta: {
+      label: "Support the Program",
+      href: `/projects/${studentWellnessProjectSlug}#support`,
+    },
+    secondaryCta: {
+      label: "Explore the Pillars",
+      href: `/projects/${studentWellnessProjectSlug}#pillars`,
+    },
+    align: "center",
+  },
   {
     image:
       "/images/IMG_0005-bg-scaled.jpg",
@@ -31,6 +86,7 @@ const slides: Slide[] = [
       label: "Donate Now",
       href: "https://www.paypal.com/donate/?hosted_button_id=DH3NT9K8M2JG6",
     },
+    secondaryCta: { label: "Learn More", href: "#about" },
     align: "center",
   },
   {
@@ -204,6 +260,9 @@ const HeroSection = () => {
           {slide.overlay && (
             <div className="absolute inset-0 bg-gradient-hero" />
           )}
+          {slide.overlay === "strong" && (
+            <div className="absolute inset-0 bg-foreground/45" />
+          )}
         </motion.div>
       </AnimatePresence>
 
@@ -255,21 +314,13 @@ const HeroSection = () => {
                   alignLeft ? "items-start sm:justify-start" : "items-center sm:justify-center"
                 }`}
               >
-                <a
-                  href={slide.cta.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-fit bg-gradient-warm text-primary-foreground px-5 py-2.5 sm:px-8 sm:py-3 rounded-full font-body font-bold text-sm sm:text-base hover:opacity-90 transition-opacity shadow-elevated"
-                >
-                  {slide.cta.label}
-                </a>
-                {index === 0 && (
-                  <a
-                    href="#about"
-                    className="w-fit border-2 border-primary-foreground/40 text-primary-foreground px-5 py-2.5 sm:px-8 sm:py-3 rounded-full font-body font-bold text-sm sm:text-base hover:bg-primary-foreground/10 transition-colors"
-                  >
-                    Learn More
-                  </a>
+                <CtaLink href={slide.cta.href} label={slide.cta.label} className={primaryBtn} />
+                {slide.secondaryCta && (
+                  <CtaLink
+                    href={slide.secondaryCta.href}
+                    label={slide.secondaryCta.label}
+                    className={secondaryBtn}
+                  />
                 )}
               </div>
             )}

@@ -46,16 +46,29 @@ const ProjectsSection = () => {
                   <h3 className="font-display text-base font-bold text-foreground mb-4 leading-snug line-clamp-2">
                     {project.title}
                   </h3>
-                  <div className="w-full bg-muted rounded-full h-2 mb-2">
-                    <div
-                      className="bg-gradient-warm h-2 rounded-full transition-all duration-1000"
-                      style={{ width: `${Math.min(pct, 100)}%` }}
-                    />
-                  </div>
-                  <div className="flex justify-between items-center font-body text-xs text-muted-foreground">
-                    <span className="font-semibold text-foreground">${project.raised.toLocaleString()}</span>
-                    <span>of ${project.goal.toLocaleString()}</span>
-                  </div>
+                  {project.budgetOnly ? (
+                    <div>
+                      <p className="font-body text-xs uppercase tracking-wider text-primary font-semibold mb-1">
+                        Annual operating budget
+                      </p>
+                      <p className="font-display text-lg font-bold text-foreground">
+                        ${project.goal.toLocaleString()}
+                      </p>
+                    </div>
+                  ) : (
+                    <>
+                      <div className="w-full bg-muted rounded-full h-2 mb-2">
+                        <div
+                          className="bg-gradient-warm h-2 rounded-full transition-all duration-1000"
+                          style={{ width: `${Math.min(pct, 100)}%` }}
+                        />
+                      </div>
+                      <div className="flex justify-between items-center font-body text-xs text-muted-foreground">
+                        <span className="font-semibold text-foreground">${project.raised.toLocaleString()}</span>
+                        <span>of ${project.goal.toLocaleString()}</span>
+                      </div>
+                    </>
+                  )}
                 </div>
               </motion.div>
               </Link>
