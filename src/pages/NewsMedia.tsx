@@ -11,7 +11,7 @@ const allNews = [
     excerpt:
       "Eight years later, her nonprofit has supported over 110,000 people across the US and India and helped students return to school.",
     link: "https://timesofindia.indiatimes.com/world/us/meet-anakh-sawhney-the-new-jersey-girl-who-began-feeding-hungry-children-at-9-eight-years-later-her-nonprofit-has-supported-over-110000-people-across-the-us-and-india-and-helped-students-return-to-school/articleshow/135606424.cms",
-    image: "/images/times-of-india-anakh-sawhney.jpg",
+    image: "/images/anakh-sawhney-times-of-india.jpg",
   },
   {
     title: "Bernardsville High senior is runner up in public service competition",
