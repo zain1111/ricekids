@@ -2,10 +2,10 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Heart } from "lucide-react";
 import { Link } from "react-router-dom";
-import { allProjects } from "@/data/projects";
+import { allProjects, studentWellnessProjectSlug } from "@/data/projects";
 
 const latestProject =
-  allProjects.find((p) => p.slug === "digital-tech-to-advance-learning") ?? allProjects[0];
+  allProjects.find((p) => p.slug === studentWellnessProjectSlug) ?? allProjects[0];
 
 const DonateSection = () => {
   const ref = useRef(null);
@@ -58,13 +58,26 @@ const DonateSection = () => {
             </Link>
           </h3>
           <div className="max-w-md mx-auto">
-            <div className="flex justify-between font-body text-sm text-primary-foreground/80 mb-2">
-              <span>${latestProject.raised.toLocaleString()} raised</span>
-              <span>${latestProject.goal.toLocaleString()} goal</span>
-            </div>
-            <div className="w-full bg-primary-foreground/20 rounded-full h-3 mb-4">
-              <div className="bg-primary-foreground h-3 rounded-full" style={{ width: `${pct}%` }} />
-            </div>
+            {latestProject.budgetOnly ? (
+              <>
+                <p className="font-body text-sm uppercase tracking-wider text-primary-foreground/80 mb-1">
+                  Annual operating budget
+                </p>
+                <p className="font-display text-2xl font-bold text-primary-foreground mb-4">
+                  ${latestProject.goal.toLocaleString()}
+                </p>
+              </>
+            ) : (
+              <>
+                <div className="flex justify-between font-body text-sm text-primary-foreground/80 mb-2">
+                  <span>${latestProject.raised.toLocaleString()} raised</span>
+                  <span>${latestProject.goal.toLocaleString()} goal</span>
+                </div>
+                <div className="w-full bg-primary-foreground/20 rounded-full h-3 mb-4">
+                  <div className="bg-primary-foreground h-3 rounded-full" style={{ width: `${pct}%` }} />
+                </div>
+              </>
+            )}
             <Link
               to={`/projects/${latestProject.slug}`}
               className="font-body text-sm font-semibold text-primary-foreground/90 hover:text-primary-foreground transition-colors underline-offset-4 hover:underline"

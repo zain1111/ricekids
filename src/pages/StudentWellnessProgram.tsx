@@ -1,13 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import {
-  Apple,
-  BookOpen,
-  Handshake,
-  HeartPulse,
-  Stethoscope,
-  Users,
-} from "lucide-react";
+import { Apple, BookOpen, HeartPulse, Stethoscope, Users } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -44,8 +37,8 @@ const pillars = [
         text: "Direct provision of free prescription eyewear vouchers and dedicated appointment coordination for students flagged with vision impairments.",
       },
       {
-        title: "Asthma Care Coordination",
-        text: "Direct linkage with local community clinics to ensure students with respiratory conditions secure maintenance inhalers, spacer devices, and personalized care action plans.",
+        title: "Chronic Disease Care",
+        text: "Ensure students with chronic sickness are able to secure medicine, devices, and personalized care.",
       },
       {
         title: "Pediatric Oral Health Supplies",
@@ -124,11 +117,31 @@ const benchmarks = [
 ];
 
 const partners = [
-  "Coalition for Healthy Food in Newark Schools",
-  "Newark Trust for Education",
-  "Community FoodBank of New Jersey",
-  "United Community Corporation",
-  "FoodCorps New Jersey",
+  {
+    name: "Coalition for Healthy Food in Newark Schools",
+    href: "https://greaternewark.org/cfhns/",
+    logo: "/images/partners/cfhns.png",
+  },
+  {
+    name: "BRICK Education Network - Newark",
+    href: "https://www.bricknetworks.org/newark",
+    logo: "/images/partners/brick.png",
+  },
+  {
+    name: "Community FoodBank of New Jersey",
+    href: "https://cfbnj.org/",
+    logo: "/images/partners/cfbnj.svg",
+  },
+  {
+    name: "United Community Corporation",
+    href: "https://uccnewark.org/",
+    logo: "/images/partners/ucc.jpg",
+  },
+  {
+    name: "FoodCorps of New Jersey",
+    href: "https://foodcorps.org/act/new-jersey/",
+    logo: "/images/partners/foodcorps.png",
+  },
 ];
 
 const fadeUp = {
@@ -159,7 +172,7 @@ const StudentWellnessProgram = () => {
             transition={{ duration: 0.6 }}
             className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-5 leading-tight"
           >
-            Flagship Program:
+            New Flagship Program:
             <br />
             The 360 Student Wellness & Learning
           </motion.h1>
@@ -334,18 +347,25 @@ const StudentWellnessProgram = () => {
             </h2>
           </motion.div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5">
-            {partners.map((name, i) => (
-              <motion.div
-                key={name}
+            {partners.map((partner, i) => (
+              <motion.a
+                key={partner.name}
+                href={partner.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 {...fadeUp}
                 transition={{ delay: i * 0.06 }}
-                className="bg-card rounded-2xl shadow-card border border-border p-6 text-center flex flex-col items-center justify-center min-h-[160px]"
+                className="bg-card rounded-2xl shadow-card hover:shadow-elevated border border-border p-6 text-center flex flex-col items-center justify-center min-h-[210px] transition-shadow"
               >
-                <div className="w-11 h-11 rounded-full bg-accent flex items-center justify-center mb-4">
-                  <Handshake className="w-5 h-5 text-primary" />
+                <div className="h-24 w-full flex items-center justify-center mb-4">
+                  <img
+                    src={partner.logo}
+                    alt=""
+                    className="max-h-24 max-w-full object-contain"
+                  />
                 </div>
-                <p className="font-display text-base font-bold text-foreground leading-snug">{name}</p>
-              </motion.div>
+                <p className="font-display text-base font-bold text-foreground leading-snug">{partner.name}</p>
+              </motion.a>
             ))}
           </div>
         </div>

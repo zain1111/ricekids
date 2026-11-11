@@ -55,7 +55,7 @@ const slides: Slide[] = [
     overlay: "strong",
     title: (
       <>
-        Flagship Program:
+        New Flagship Program:
         <br />
         The 360 Student Wellness & Learning
       </>
