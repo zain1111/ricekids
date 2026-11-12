@@ -174,7 +174,7 @@ const StudentWellnessProgram = () => {
           >
             New Flagship Program:
             <br />
-            The 360 Student Wellness & Learning
+            The 360° Student Wellness & Learning
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 16 }}

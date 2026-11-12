@@ -57,7 +57,7 @@ const slides: Slide[] = [
       <>
         New Flagship Program:
         <br />
-        The 360 Student Wellness & Learning
+        The 360° Student Wellness & Learning
       </>
     ),
     subtitle: "Delivered in partnership with Newark Public Schools and five leading community partners.",
