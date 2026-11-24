@@ -29,6 +29,17 @@ export const allProjects: Project[] = [
       "An integrated model delivered in partnership with Newark Public Schools and five leading community partners. The program connects students with continuous nutrition, clinical follow-up care, essential hygiene supplies, academic tutoring, and near-peer mentorship.",
   },
   {
+    slug: "bringing-holiday-cheer",
+    title: "Bringing holiday cheer!",
+    period: "Nov – Jan 2026",
+    raised: 1600,
+    goal: 3000,
+    donors: 51,
+    image: "/images/bringing-holiday-cheer.jpg",
+    description:
+      "One of the most special programs of the year is here to create special memories for local students and families who need a reason to smile! The holiday gift bag drive brings the community together to ensure kids from marginalized communities feel supported and can celebrate the holiday season with some gifts!",
+  },
+  {
     slug: "advancing-learning-with-essential-resources",
     title: "Advancing Learning With Essential Resources",
     period: "Jun – Sep 2026",
