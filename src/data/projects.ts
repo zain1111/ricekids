@@ -31,7 +31,7 @@ export const allProjects: Project[] = [
   {
     slug: "bringing-holiday-cheer",
     title: "Bringing holiday cheer!",
-    period: "Nov – Jan 2026",
+    period: "Nov – Jan 2027",
     raised: 1600,
     goal: 3000,
     donors: 51,
